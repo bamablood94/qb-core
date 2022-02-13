@@ -1,10 +1,25 @@
 -- Event Handler
 
-AddEventHandler('playerDropped', function()
+--[[AddEventHandler('playerDropped', function()
     local src = source
     if QBCore.Players[src] then
         local Player = QBCore.Players[src]
         TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Dropped', 'red', '**' .. GetPlayerName(src) .. '** (' .. Player.PlayerData.license .. ') left..')
+        Player.Functions.Save()
+        _G.Player_Buckets[Player.PlayerData.license] = nil
+        QBCore.Players[src] = nil
+    end
+end)]]
+AddEventHandler('playerDropped', function()
+    local src = source
+    local ped = GetPlayerPed(src)
+    local armor = GetPedArmour(ped)
+    local health = GetEntityHealth(ped)
+    if QBCore.Players[src] then
+        local Player = QBCore.Players[src]
+        TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Dropped', 'red', '**' .. GetPlayerName(src) .. '** (' .. Player.PlayerData.license .. ') left..')
+        Player.Functions.SetMetaData('health', health)
+        Player.Functions.SetMetaData('armor', armor)
         Player.Functions.Save()
         _G.Player_Buckets[Player.PlayerData.license] = nil
         QBCore.Players[src] = nil
