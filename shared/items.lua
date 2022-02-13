@@ -1,6 +1,10 @@
 QBShared = QBShared or {}
 QBShared.Items = {
 	-- WEAPONS
+
+	-- Addons
+	['weapon_beanbag']				 ={['name']  = 'weapon_beanbag',				['label'] = 'Beanbag',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,			['image'] = 'weapon_combatshotgun.png',	['unique'] = true,		['useable'] = true,	    ['description'] = 'Beanbag Shotgun'},
+
 	-- Melee
 	['weapon_unarmed'] 				 = {['name'] = 'weapon_unarmed', 		 	  	['label'] = 'Fists', 					['weight'] = 1000, 		['type'] = 'weapon',	['ammotype'] = nil, 					['image'] = 'placeholder.png', 			['unique'] = true, 		['useable'] = false, 	['description'] = 'Fisticuffs'},
 	['weapon_dagger'] 				 = {['name'] = 'weapon_dagger', 			 	['label'] = 'Dagger', 					['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = nil,						['image'] = 'weapon_dagger.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A short knife with a pointed and edged blade, used as a weapon'},

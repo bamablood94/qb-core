@@ -143,6 +143,9 @@ QBShared.Weapons = {
 	[`weapon_fire`]					= {['name'] = 'weapon_fire',				['label'] = 'Fire',						['ammotype'] = nil,						['damagereason'] = 'Torched / Flambeed / Barbecued'},
 
 	-- Animals
-	[`weapon_animal`]	= {['name'] = 'weapon_animal',	['label'] = 'Animal',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
-    [`weapon_cougar`]	= {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+	[`weapon_animal`]				= {['name'] = 'weapon_animal',	['label'] = 'Animal',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+    [`weapon_cougar`]				= {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+
+	--Addon Weapons
+	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',	['label'] = 'Beanbag Shotgun', ['ammotype'] = 'AMMO_SHOTGUN', ['damagereason'] = 'Beanbagged'},
 }
