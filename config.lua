@@ -6,9 +6,9 @@ QBConfig.UpdateInterval = 5 -- how often to update player data in minutes
 QBConfig.StatusInterval = 5000 -- how often to check hunger/thirst status in ms
 
 QBConfig.Money = {}
-QBConfig.Money.MoneyTypes = { ['cash'] = 500, ['bank'] = 5000, ['crypto'] = 0 } -- ['type']=startamount - Add or remove money types for your server (for ex. ['blackmoney']=0), remember once added it will not be removed from the database!
+QBConfig.Money.MoneyTypes = { ['cash'] = 5000, ['bank'] = 5000, ['crypto'] = 0 } -- ['type']=startamount - Add or remove money types for your server (for ex. ['blackmoney']=0), remember once added it will not be removed from the database!
 QBConfig.Money.DontAllowMinus = { 'cash', 'crypto' } -- Money that is not allowed going in minus
-QBConfig.Money.PayCheckTimeOut = 10 -- The time in minutes that it will give the paycheck
+QBConfig.Money.PayCheckTimeOut = 7 -- The time in minutes that it will give the paycheck
 QBConfig.Money.PayCheckSociety = false -- If true paycheck will come from the society account that the player is employed at, requires qb-bossmenu
 
 QBConfig.Player = {}
@@ -33,7 +33,7 @@ QBConfig.Server.closedReason = "Server Closed" -- Reason message to display when
 QBConfig.Server.uptime = 0 -- Time the server has been up.
 QBConfig.Server.whitelist = false -- Enable or disable whitelist on the server
 QBConfig.Server.pvp = true -- Enable or disable pvp on the server (Ability to shoot other players)
-QBConfig.Server.discord = "" -- Discord invite link
+QBConfig.Server.discord = "https://discord.gg/Z6pP5Ke2t9" -- Discord invite link
 QBConfig.Server.checkDuplicateLicense = true -- check for duplicate rockstar license on join
 QBConfig.Server.PermissionList = {} -- permission list
 
@@ -41,7 +41,7 @@ QBConfig.Notify = {}
 
 QBConfig.Notify.NotificationStyling = {
     group = false, -- Allow notifications to stack with a badge instead of repeating
-    position = "right", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
+    position = "top-right", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
     progress = true -- Display Progress Bar
 }
 

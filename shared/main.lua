@@ -73,7 +73,8 @@ end
 QBShared.StarterItems = {
     ['phone'] = { amount = 1, item = 'phone' },
     ['id_card'] = { amount = 1, item = 'id_card' },
-    ['driver_license'] = { amount = 1, item = 'driver_license' },
+    ['water_bottle'] = { amount = 2, item = 'water_bottle'},
+    ['snikkel_candy'] = { amount = 2, item = 'snikkel_candy'}
 }
 
 QBShared.MaleNoGloves = {
