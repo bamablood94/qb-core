@@ -147,5 +147,11 @@ QBShared.Weapons = {
     [`weapon_cougar`]				= {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
 
 	--Addon Weapons
-	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',	['label'] = 'Beanbag Shotgun', ['ammotype'] = 'AMMO_SHOTGUN', ['damagereason'] = 'Beanbagged'},
+	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',					['label'] = 'Beanbag Shotgun', 			['ammotype'] = 'AMMO_SHOTGUN', ['damagereason'] = 'Beanbagged'},
+	[`weapon_dp9`]				 	 ={['name']  = 'weapon_dp9',					['label'] = 'DP9',						['ammotype'] = nil, ['damagereason'] = 'DP9'},
+	[`weapon_ltl`]					 ={['name']  = 'weapon_ltl',					['label'] = 'LTL',						['ammotype'] = nil, ['damagereason'] = 'LTL'},
+	[`weapon_browning`]				 ={['name']  = 'weapon_browning',				['label'] = 'Browning',					['ammotype'] = nil, ['damagereason'] = 'Browning'},
+	[`weapon_staff`]				 ={['name']  = 'weapon_staff',					['label'] = 'Staff',					['ammotype'] = nil,	['damagereason'] = 'Staffed'},
+
+	-- Melee
 }

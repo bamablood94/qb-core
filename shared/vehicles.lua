@@ -4436,15 +4436,6 @@ QBShared.Vehicles = {
 		['hash'] = `180326`,
 		['shop'] = 'import',
 	},
-	['b7l04'] = {
-		['name'] = '2004 Alpina B7',
-		['brand'] = 'BMW',
-		['model'] = 'b7l04',
-		['price'] = 50000,
-		['category'] = 'importsedan',
-		['hash'] = `b7l04`,
-		['shop'] = 'import',
-	},
 	['chevelle67'] = {
 		['name'] = '1967 Chevelle',
 		['brand'] = 'Cheverlot',
