@@ -860,7 +860,7 @@ QBShared.Jobs = {
         },
 	},
 	['mechanic'] = {
-		label = "Benny's Customs Mech",
+		label = "Mechanic",
 		defaultDuty = false,
 		offDutyPay = false,
 		grades = {

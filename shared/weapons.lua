@@ -31,7 +31,7 @@ QBShared.Weapons = {
 	[`weapon_pistol_mk2`] 			 = {['name'] = 'weapon_pistol_mk2', 	['label'] = 'Pistol Mk II', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_combatpistol`] 		 = {['name'] = 'weapon_combatpistol', 	['label'] = 'Combat Pistol', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_appistol`] 			 = {['name'] = 'weapon_appistol', 		['label'] = 'AP Pistol', 				['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
-	[`weapon_stungun`] 				 = {['name'] = 'weapon_stungun', 		['label'] = 'Taser', 					['ammotype'] = 'AMMO_STUNGUN',	['damagereason'] = 'Died'},
+	[`weapon_stungun`] 				 = {['name'] = 'weapon_stungun', 		['label'] = 'Taser', 					['ammotype'] = 'AMMO_TASER',	['damagereason'] = 'Died'},
 	[`weapon_pistol50`] 			 = {['name'] = 'weapon_pistol50', 		['label'] = 'Pistol .50 Cal', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_snspistol`] 			 = {['name'] = 'weapon_snspistol', 		['label'] = 'SNS Pistol', 				['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_snspistol_mk2`] 	     = {['name'] = 'weapon_snspistol_mk2', 	['label'] = 'SNS Pistol MK2', 			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
@@ -46,7 +46,7 @@ QBShared.Weapons = {
 	[`weapon_ceramicpistol`]		 = {['name'] = 'weapon_ceramicpistol', 	['label'] = 'Weapon Ceramicpistol',		['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_navyrevolver`]        	 = {['name'] = 'weapon_navyrevolver', 	['label'] = 'Weapon Navyrevolver',		['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
 	[`weapon_gadgetpistol`] 		 = {['name'] = 'weapon_gadgetpistol', 	['label'] = 'Weapon Gadgetpistol',		['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
-	[`weapon_stungun_mp`] 			 = {['name'] = 'weapon_stungun_mp', 	['label'] = 'Taser', 					['ammotype'] = 'AMMO_STUNGUN',	['damagereason'] = 'Died'},
+	[`weapon_stungun_mp`] 			 = {['name'] = 'weapon_stungun_mp', 	['label'] = 'Taser', 					['ammotype'] = 'AMMO_TASER',	['damagereason'] = 'Died'},
 
     -- Submachine Guns
 	[`weapon_microsmg`] 			 = {['name'] = 'weapon_microsmg', 		['label'] = 'Micro SMG', 			['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
@@ -96,7 +96,7 @@ QBShared.Weapons = {
 	[`weapon_heavysniper_mk2`]		 = {['name'] = 'weapon_heavysniper_mk2', 	['label'] = 'Weapon Heavysniper MK2',	['ammotype'] = 'AMMO_SNIPER',			['damagereason'] = 'Sniped / Picked off / Scoped'},
 	[`weapon_marksmanrifle`] 		 = {['name'] = 'weapon_marksmanrifle', 	 	['label'] = 'Marksman Rifle', 			['ammotype'] = 'AMMO_SNIPER',			['damagereason'] = 'Sniped / Picked off / Scoped'},
 	[`weapon_marksmanrifle_mk2`]	 = {['name'] = 'weapon_marksmanrifle_mk2',	['label'] = 'Weapon Marksmanrifle MK2',	['ammotype'] = 'AMMO_SNIPER',			['damagereason'] = 'Sniped / Picked off / Scoped'},
-	[`weapon_remotesniper`] 		 = {['name'] = 'weapon_remotesniper', 	 	['label'] = 'Remote Sniper', 			['ammotype'] = 'AMMO_SNIPER_REMOTE',	['damagereason'] = 'Sniped / Picked off / Scoped'},
+	--[`weapon_remotesniper`] 		 = {['name'] = 'weapon_remotesniper', 	 	['label'] = 'Remote Sniper', 			['ammotype'] = 'AMMO_SNIPER_REMOTE',	['damagereason'] = 'Sniped / Picked off / Scoped'},
 
     -- Heavy Weapons
 	[`weapon_rpg`] 					 = {['name'] = 'weapon_rpg', 			      	['label'] = 'RPG', 						['ammotype'] = 'AMMO_RPG',				['damagereason'] = 'Killed / Exploded / Obliterated / Destroyed / Erased / Annihilated'},
@@ -147,11 +147,16 @@ QBShared.Weapons = {
     [`weapon_cougar`]				= {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
 
 	--Addon Weapons
-	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',					['label'] = 'Beanbag Shotgun', 			['ammotype'] = 'AMMO_SHOTGUN', ['damagereason'] = 'Beanbagged'},
-	[`weapon_dp9`]				 	 ={['name']  = 'weapon_dp9',					['label'] = 'DP9',						['ammotype'] = nil, ['damagereason'] = 'DP9'},
-	[`weapon_ltl`]					 ={['name']  = 'weapon_ltl',					['label'] = 'LTL',						['ammotype'] = nil, ['damagereason'] = 'LTL'},
-	[`weapon_browning`]				 ={['name']  = 'weapon_browning',				['label'] = 'Browning',					['ammotype'] = nil, ['damagereason'] = 'Browning'},
-	[`weapon_staff`]				 ={['name']  = 'weapon_staff',					['label'] = 'Staff',					['ammotype'] = nil,	['damagereason'] = 'Staffed'},
+	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',					['label'] = 'Beanbag Shotgun', 			['ammotype'] = 'AMMO_SHOTGUN', 	['damagereason'] = 'Beanbagged'},
+	[`weapon_dp9`]				 	 ={['name']  = 'weapon_dp9',					['label'] = 'DP9',						['ammotype'] = nil, 			['damagereason'] = 'DP9'},
+	[`weapon_ltl`]					 ={['name']  = 'weapon_ltl',					['label'] = 'LTL',						['ammotype'] = nil, 			['damagereason'] = 'LTL'},
+	[`weapon_browning`]				 ={['name']  = 'weapon_browning',				['label'] = 'Browning',					['ammotype'] = nil, 			['damagereason'] = 'Browning'},
+	[`weapon_staff`]				 ={['name']  = 'weapon_staff',					['label'] = 'Staff',					['ammotype'] = nil,				['damagereason'] = 'Staffed'},
+	[`weapon_g17`]					 ={['name']  = 'weapon_g17',					['label'] = 'Glock 17',					['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Pistoled / Blasted / Plugged / Bust a cap in'},
+	[`weapon_m870`]					 ={['name']  = 'weapon_m870',					['label'] = 'M870',						['ammotype'] = 'AMMO_SHOTGUN',	['damagereason'] = 'Devastated / Pulverized / Shotgunned'},
+	[`weapon_mk18`]					 ={['name']  = 'weapon_mk18',					['label'] = 'MK18',						['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
+	[`weapon_mpx`]					 ={['name']  = 'weapon_mpx',					['label'] = 'MPX',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
+	[`weapon_pp19`]					 ={['name']  = 'weapon_pp19',					['label'] = 'PP19',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 
 	-- Melee
 }
