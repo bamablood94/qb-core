@@ -5000,4 +5000,141 @@ QBShared.Vehicles = {
 		['shop'] = 'owners',
 	},
 
+	--POLICE VEHICLES
+	['valor1bb'] = {
+		['name'] = 'Charger',
+		['brand'] = 'Dodge',
+		['model'] = 'valor1bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor1bb',
+		['shop'] = 'police'
+	},
+	['valor2bb'] = {
+		['name'] = 'Charger',
+		['brand'] = 'Dodge',
+		['model'] = 'valor2bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor2bb',
+		['shop'] = 'police'
+	},
+	['valor3bb'] = {
+		['name'] = 'Charger',
+		['brand'] = 'Dodge',
+		['model'] = 'valor3bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor3bb',
+		['shop'] = 'police'
+	},
+	['valor4bb'] = {
+		['name'] = 'Caprice',
+		['brand'] = 'Chevy',
+		['model'] = 'valor4bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor4bb',
+		['shop'] = 'police'
+	},
+	['valor5bb'] = {
+		['name'] = 'Crown Vic',
+		['brand'] = 'Ford',
+		['model'] = 'valor5bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor5bb',
+		['shop'] = 'police'
+	},
+	['valor6bb'] = {
+		['name'] = 'Taurus',
+		['brand'] = 'Ford',
+		['model'] = 'valor6bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor6bb',
+		['shop'] = 'police'
+	},
+	['valor7bb'] = {
+		['name'] = 'Tahoe',
+		['brand'] = 'Chevy',
+		['model'] = 'valor7bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor7bb',
+		['shop'] = 'police'
+	},
+	['valor8bb'] = {
+		['name'] = 'Tahoe',
+		['brand'] = 'Chevy',
+		['model'] = 'valor8bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor8bb',
+		['shop'] = 'police'
+	},
+	['valor9bb'] = {
+		['name'] = 'Tahoe',
+		['brand'] = 'Chevy',
+		['model'] = 'valor9bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor9bb',
+		['shop'] = 'police'
+	},
+	['valor10bb'] = {
+		['name'] = 'Durango',
+		['brand'] = 'Dodge',
+		['model'] = 'valor10bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor10bb',
+		['shop'] = 'police'
+	},
+	['valor11bb'] = {
+		['name'] = 'Explorer',
+		['brand'] = 'Ford',
+		['model'] = 'valor11bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor11bb',
+		['shop'] = 'police'
+	},
+	['valor12bb'] = {
+		['name'] = 'Explorer',
+		['brand'] = 'Ford',
+		['model'] = 'valor12bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor12bb',
+		['shop'] = 'police'
+	},
+	['valor13bb'] = {
+		['name'] = 'Explorer',
+		['brand'] = 'Ford',
+		['model'] = 'valor13bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor13bb',
+		['shop'] = 'police'
+	},
+	['valor4bb'] = {
+		['name'] = 'F-150',
+		['brand'] = 'Ford',
+		['model'] = 'valor14bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor14bb',
+		['shop'] = 'police'
+	},
+	['valor15bb'] = {
+		['name'] = 'Ram 3500',
+		['brand'] = 'Dodge',
+		['model'] = 'valor15bb',
+		['price'] = 0,
+		['category'] = 'lspd',
+		['hash'] = 'valor15bb',
+		['shop'] = 'police'
+	},
+
 }
