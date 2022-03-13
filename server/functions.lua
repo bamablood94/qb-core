@@ -225,6 +225,13 @@ end
 -- Items
 
 function QBCore.Functions.CreateUseableItem(item, cb)
+    if type(item) == "table" then
+        for _,i in ipairs(item) do
+            QBCore.UseableItems[i] = cb
+        end
+    else 
+        QBCore.UseableItems[item] = cb
+    end
     QBCore.UseableItems[item] = cb
 end
 
@@ -298,8 +305,8 @@ end
 function QBCore.Functions.AddPermission(source, permission)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local plicense = Player.PlayerData.license
     if Player then
+        local plicense = Player.PlayerData.license
         QBCore.Config.Server.PermissionList[plicense] = {
             license = plicense,
             permission = permission:lower(),
@@ -320,8 +327,8 @@ end
 function QBCore.Functions.RemovePermission(source)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
-    local license = Player.PlayerData.license
     if Player then
+        local license = Player.PlayerData.license
         QBCore.Config.Server.PermissionList[license] = nil
         MySQL.Async.execute('DELETE FROM permissions WHERE license = ?', { license })
         Player.Functions.UpdatePlayerData()
@@ -391,9 +398,9 @@ function QBCore.Functions.IsPlayerBanned(source)
         if os.time() < result.expire then
             retval = true
             local timeTable = os.date('*t', tonumber(result.expire))
-            message = 'You have been banned from the server:\n' .. result[1].reason .. '\nYour ban expires ' .. timeTable.day .. '/' .. timeTable.month .. '/' .. timeTable.year .. ' ' .. timeTable.hour .. ':' .. timeTable.min .. '\n'
+            message = 'You have been banned from the server:\n' .. result.reason .. '\nYour ban expires ' .. timeTable.day .. '/' .. timeTable.month .. '/' .. timeTable.year .. ' ' .. timeTable.hour .. ':' .. timeTable.min .. '\n'
         else
-            MySQL.Async.execute('DELETE FROM bans WHERE id = ?', { result[1].id })
+            MySQL.Async.execute('DELETE FROM bans WHERE id = ?', { result.id })
         end
     end
     return retval, message
