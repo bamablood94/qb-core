@@ -5008,7 +5008,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor1bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor2bb'] = {
 		['name'] = 'Charger',
@@ -5017,7 +5017,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor2bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor3bb'] = {
 		['name'] = 'Charger',
@@ -5026,7 +5026,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor3bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor4bb'] = {
 		['name'] = 'Caprice',
@@ -5035,7 +5035,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor4bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor5bb'] = {
 		['name'] = 'Crown Vic',
@@ -5044,7 +5044,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor5bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor6bb'] = {
 		['name'] = 'Taurus',
@@ -5053,7 +5053,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor6bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor7bb'] = {
 		['name'] = 'Tahoe',
@@ -5062,7 +5062,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor7bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor8bb'] = {
 		['name'] = 'Tahoe',
@@ -5071,7 +5071,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor8bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor9bb'] = {
 		['name'] = 'Tahoe',
@@ -5080,7 +5080,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor9bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor10bb'] = {
 		['name'] = 'Durango',
@@ -5089,7 +5089,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor10bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor11bb'] = {
 		['name'] = 'Explorer',
@@ -5098,7 +5098,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor11bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor12bb'] = {
 		['name'] = 'Explorer',
@@ -5107,7 +5107,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor12bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor13bb'] = {
 		['name'] = 'Explorer',
@@ -5116,7 +5116,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor13bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor4bb'] = {
 		['name'] = 'F-150',
@@ -5125,7 +5125,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor14bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 	['valor15bb'] = {
 		['name'] = 'Ram 3500',
@@ -5134,7 +5134,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor15bb',
-		['shop'] = 'police'
+		['shop'] = 'policeshop'
 	},
 
 }
