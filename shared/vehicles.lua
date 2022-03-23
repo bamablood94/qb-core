@@ -4653,6 +4653,16 @@ QBShared.Vehicles = {
 		['hash'] = `zl12017`,
 		['shop'] = 'import',
 	},
+	['00f350d'] = {
+		['name'] = '2000 F350 dually',
+		['brand'] = 'Ford',
+		['model'] = '00f350d',
+		['price'] = 35000,
+		['category'] = 'importtrucks',
+		['hash'] = `00f350d`,
+		['shop'] = 'import',
+	},
+     
 	-- One of Ones & Pay For
 	['17jamb'] = {	-- Pay for
 		['name'] = '2017 E-450 Fleetwood',
