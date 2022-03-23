@@ -4823,6 +4823,14 @@ QBShared.Vehicles = {
 		['category'] = 'importmotorcylces',
 		['hash'] = `na25`,
 		['shop'] = 'import',
+	},['low06'] = {
+		['name'] = 'Seirra 1500',
+		['brand'] = '2006 GMC',
+		['model'] = 'low06',
+		['price'] = 100000000,
+		['category'] = 'importowners',
+		['hash'] = `low06`,
+		['shop'] = 'import',
 	},
 	-- One of Ones & Pay For
 	['17jamb'] = {	-- Pay for
