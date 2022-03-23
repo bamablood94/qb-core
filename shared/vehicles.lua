@@ -4662,7 +4662,16 @@ QBShared.Vehicles = {
 		['hash'] = `00f350d`,
 		['shop'] = 'import',
 	},
-     
+	['20denalihd'] = {
+		['name'] = '2020 Seira Denali',
+		['brand'] = 'GMC',
+		['model'] = '20denalihd',
+		['price'] = 50000,
+		['category'] = 'importtrucks',
+		['hash'] = `20denalihd`,
+		['shop'] = 'import',
+	},
+	
 	-- One of Ones & Pay For
 	['17jamb'] = {	-- Pay for
 		['name'] = '2017 E-450 Fleetwood',
