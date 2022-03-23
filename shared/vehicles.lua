@@ -4725,6 +4725,24 @@ QBShared.Vehicles = {
 		['hash'] = `f250r`,
 		['shop'] = 'import',
 	},
+	['gsxr'] = {
+		['name'] = '2018 GSX-R 1000',
+		['brand'] = 'Susuki',
+		['model'] = 'gsxr',
+		['price'] = 10000000,
+		['category'] = 'importowners',
+		['hash'] = `gsxr`,
+		['shop'] = 'import',
+	},
+	['r1'] = {
+		['name'] = '2021 YZF-R1',
+		['brand'] = 'Yamaha',
+		['model'] = 'r1',
+		['price'] = 26500,
+		['category'] = 'importmotorcylces',
+		['hash'] = `r1`,
+		['shop'] = 'import',
+	},
 	-- One of Ones & Pay For
 	['17jamb'] = {	-- Pay for
 		['name'] = '2017 E-450 Fleetwood',
