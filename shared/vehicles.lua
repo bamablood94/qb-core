@@ -4675,7 +4675,7 @@ QBShared.Vehicles = {
 		['name'] = '2001 Ram 3500',
 		['brand'] = 'Dodge',
 		['model'] = '3500flatbed',
-		['price'] = 3500,
+		['price'] = 35000,
 		['category'] = 'importtrucks',
 		['hash'] = `3500flatbed`,
 		['shop'] = 'import',
@@ -4741,6 +4741,122 @@ QBShared.Vehicles = {
 		['price'] = 26500,
 		['category'] = 'importmotorcycles',
 		['hash'] = `r1`,
+		['shop'] = 'import',
+	},
+	['acknodlow'] = {
+		['name'] = 'Road-King',
+		['brand'] = '2018 Harley-davidson',
+		['model'] = 'acknodlow',
+		['price'] = 20000,
+		['category'] = 'importmotorcycles',
+		['hash'] = `acknodlow`,
+		['shop'] = 'import',
+	},
+	['dyna'] = {
+		['name'] = 'Dyna-Glyde',
+		['brand'] = '2018 Harley-Davidson',
+		['model'] = 'dyna',
+		['price'] = 23000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `dyna`,
+		['shop'] = 'import',
+	},
+	['dyne'] = {
+		['name'] = 'Dyna-Glide-s',
+		['brand'] = '2018 Harley-Davidson',
+		['model'] = 'dyne',
+		['price'] = 23000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `dyne`,
+		['shop'] = 'import',
+	},
+	['flhxs_streetglide_special18'] = {
+		['name'] = 'StreetGlide',
+		['brand'] = '2018 Harly-Davidson',
+		['model'] = 'flhxs_sreetglide_special18',
+		['price'] = 36000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `flhxs_streetglide_special18`,
+		['shop'] = 'import',
+	},
+	['foxharley1'] = {
+		['name'] = 'Fox River',
+		['brand'] = '2018 Harley Davidson',
+		['model'] = 'foxharley1',
+		['price'] = 21000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `foxharley1`,
+		['shop'] = 'import',
+	},
+	['foxrk'] = {
+		['name'] = 'Milwaukee-Eight',
+		['brand'] = '2018 Harley-Davidson ',
+		['model'] = 'foxrk',
+		['price'] = 34000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `foxrk`,
+		['shop'] = 'import',
+	},
+	['HDIron883'] = {
+		['name'] = 'Iron 883',
+		['brand'] = '2020 Harley-Davidson',
+		['model'] = 'HDIron883',
+		['price'] = 36000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `HDIron883`,
+		['shop'] = 'import',
+	},
+	['mv2019'] = {
+		['name'] = 'Augsta Brutale 1000RR',
+		['brand'] = '2019 MV',
+		['model'] = 'mv2019',
+		['price'] = 36000,
+		['category'] = 'importmotorcylces',
+		['hash'] = `mv2019`,
+		['shop'] = 'import',
+	},
+	['na25'] = {
+		['name'] = 'Indian SUper Chief',
+		['brand'] = '2018 Harley-Davidson',
+		['model'] = 'na25',
+		['price'] = 21500,
+		['category'] = 'importmotorcylces',
+		['hash'] = `na25`,
+		['shop'] = 'import',
+	},['low06'] = {
+		['name'] = 'Sierra 1500',
+		['brand'] = '2006 GMC',
+		['model'] = 'low06',
+		['price'] = 100000000,
+		['category'] = 'importowners',
+		['hash'] = `low06`,
+		['shop'] = 'import',
+	},
+	['bc052500'] = {
+		['name'] = 'Sierra 2500',
+		['brand'] = '2005 GMC',
+		['model'] = 'bc052500',
+		['price'] = 100000000,
+		['category'] = 'importowners',
+		['hash'] = `bc052500`,
+		['shop'] = 'import',
+	},
+	['bclance'] = {
+		['name'] = 'Sierra 1500',
+		['brand'] = '2005 GMC',
+		['model'] = 'bclance',
+		['price'] = 100000000,
+		['category'] = 'importowners',
+		['hash'] = `bclance`,
+		['shop'] = 'import',
+	},
+	['gsnake'] = {
+		['name'] = 'Mustang Cobra',
+		['brand'] = '2003 Ford',
+		['model'] = 'gsnake',
+		['price'] = 100000000,
+		['category'] = 'importowners',
+		['hash'] = `gsnake`,
 		['shop'] = 'import',
 	},
 	-- One of Ones & Pay For
@@ -5098,7 +5214,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor1bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor2bb'] = {
 		['name'] = 'Charger',
@@ -5107,7 +5223,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor2bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor3bb'] = {
 		['name'] = 'Charger',
@@ -5116,7 +5232,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor3bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor4bb'] = {
 		['name'] = 'Caprice',
@@ -5125,7 +5241,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor4bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor5bb'] = {
 		['name'] = 'Crown Vic',
@@ -5134,7 +5250,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor5bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor6bb'] = {
 		['name'] = 'Taurus',
@@ -5143,7 +5259,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor6bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor7bb'] = {
 		['name'] = 'Tahoe',
@@ -5152,7 +5268,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor7bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor8bb'] = {
 		['name'] = 'Tahoe',
@@ -5161,7 +5277,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor8bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor9bb'] = {
 		['name'] = 'Tahoe',
@@ -5170,7 +5286,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor9bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor10bb'] = {
 		['name'] = 'Durango',
@@ -5179,7 +5295,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor10bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor11bb'] = {
 		['name'] = 'Explorer',
@@ -5188,7 +5304,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor11bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor12bb'] = {
 		['name'] = 'Explorer',
@@ -5197,7 +5313,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor12bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor13bb'] = {
 		['name'] = 'Explorer',
@@ -5206,7 +5322,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor13bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor4bb'] = {
 		['name'] = 'F-150',
@@ -5215,7 +5331,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor14bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 	['valor15bb'] = {
 		['name'] = 'Ram 3500',
@@ -5224,7 +5340,7 @@ QBShared.Vehicles = {
 		['price'] = 0,
 		['category'] = 'lspd',
 		['hash'] = 'valor15bb',
-		['shop'] = 'policeshop'
+		['shop'] = 'police'
 	},
 
 }
