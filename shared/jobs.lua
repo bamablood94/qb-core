@@ -717,7 +717,7 @@ QBShared.Jobs = {
     },
 	['lawyer'] = {
         label = 'Department of Justice',
-        defaultDuty = true,
+        defaultDuty = false,
 		offDutyPay = false,
         grades = {
 			['0'] = {
@@ -833,7 +833,35 @@ QBShared.Jobs = {
 	},
 	["burgershot"] = {
 		label = "Burgershot Employee",
-		defaultDuty = true,
+		defaultDuty = false,
+		offDutyPay = false,
+		grades = {
+            ['0'] = {
+                name = "Trainee",
+                payment = 220
+            },
+			['1'] = {
+                name = "Employee",
+                payment = 245
+            },
+			['2'] = {
+                name = "Burger Flipper",
+                payment = 260
+            },
+			['3'] = {
+                name = "Manager",
+                payment = 285
+            },
+			['4'] = {
+                name = "CEO",
+				isboss = true,
+                payment = 300
+            },
+        },
+	},
+	["cluckinbell"] = {
+		label = "CluckinBell Employee",
+		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
             ['0'] = {
@@ -1487,130 +1515,6 @@ QBShared.Jobs = {
 		},
 		defaultDuty = false,
 		offDutyPay = false,
-	},
-		-- THE ELITES GUNSTRE
-	["gunshop"] = {
-		label = "The Elites Gun Store",
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-				name = "Clerk",
-				payment = 50
-			},
-			['1'] = {
-				name = "Manager",
-				payment = 150
-			},
-			['2'] = {
-				name = "Supervisor",
-				payment = 200
-			},
-			['3'] = {
-				name = "Owner",
-				isboss = true,
-				payment = 300
-			},
-		},
-	},
-	["gunshop1"] = {
-		label = "Locked 'n Loaded",
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-				name = "Clerk",
-				payment = 50
-			},
-			['1'] = {
-				name = "Manager",
-				payment = 150
-			},
-			['2'] = {
-				name = "Supervisor",
-				payment = 200
-			},
-			['3'] = {
-				name = "Owner",
-				isboss = true,
-				payment = 300
-			},
-		},
-	},
-
-	["gunshop2"] = {
-		label = "Nemo Guns",
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-				name = "Clerk",
-				payment = 50
-			},
-			['1'] = {
-				name = "Manager",
-				payment = 150
-			},
-			['2'] = {
-				name = "Supervisor",
-				payment = 200
-			},
-			['3'] = {
-				name = "Owner",
-				isboss = true,
-				payment = 300
-			},
-		},
-	},
-
-	["gunshop3"] = {
-		label = "Blower's R' Us",
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-				name = "Clerk",
-				payment = 50
-			},
-			['1'] = {
-				name = "Manager",
-				payment = 150
-			},
-			['2'] = {
-				name = "Supervisor",
-				payment = 200
-			},
-			['3'] = {
-				name = "Owner",
-				isboss = true,
-				payment = 300
-			},
-		},
-	},
-
-	["gunshop4"] = {
-		label = "Snow's Gun-show",
-		defaultDuty = true,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-				name = "Clerk",
-				payment = 50
-			},
-			['1'] = {
-				name = "Manager",
-				payment = 150
-			},
-			['2'] = {
-				name = "Supervisor",
-				payment = 200
-			},
-			['3'] = {
-				name = "Owner",
-				isboss = true,
-				payment = 300
-			},
-		},
 	},
 
 	['amazon'] = {
