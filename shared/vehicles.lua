@@ -4739,7 +4739,7 @@ QBShared.Vehicles = {
 		['brand'] = 'Yamaha',
 		['model'] = 'r1',
 		['price'] = 26500,
-		['category'] = 'importmotorcylces',
+		['category'] = 'importmotorcycles',
 		['hash'] = `r1`,
 		['shop'] = 'import',
 	},
