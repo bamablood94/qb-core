@@ -657,4 +657,7 @@ QBShared.Items = {
 	["coke_cured"] =          {["name"] = "coke_cured",         ["label"] = "Salt",                  ["weight"] = 100, ["type"] = "item", ["image"] = "coke_cured.png", ["unique"] = false, ["useable"] = false, ['shouldClose'] = false, ["combinable"] = nil, ["description"] = "some coke"},
 	["meth_cured"] =          {["name"] = "meth_cured",         ["label"] = "Ice",                  ["weight"] = 100, ["type"] = "item", ["image"] = "meth_cured.png", ["unique"] = false, ["useable"] = false, ['shouldClose'] = false, ["combinable"] = nil, ["description"] = "Crystal meth"},
 	["casekey"] =             {["name"] = "casekey",            ["label"] = "Case Key",             ["weight"] = 0, ["type"] = "item", ["image"] = "key1.png", ["unique"] = true, ["useable"] = false, ['shouldClose'] = false, ["combinable"] = nil, ["description"] = "Key for a case"},
+	
+	--QB-GUNJOBS
+	['licensepistol'] 				 = {['name'] = 'licensepistol', 			 	['label'] = 'License  pistol', 			['weight'] = 0, 		['type'] = 'item', 		['image'] = 'stickynote.png', 			['unique'] = true, 		['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = "thats my gun"},
 }

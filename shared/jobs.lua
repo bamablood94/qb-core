@@ -1694,4 +1694,29 @@ QBShared.Jobs = {
 		defaultDuty = false,
 		offDutyPay = false,
 	},
+	['snowsgunshow'] = {
+		label = 'Snows Gun Show',
+		grades = {
+			['0'] = {
+				name = 'Associate',
+				payment = 100,
+			},
+			['1'] = {
+				name = 'Senior Associate',
+				payment = 125
+			},
+			['2'] = {
+				name = 'Manager',
+				payment = 140,
+				isboss = true,
+			},
+			['3'] = {
+				name = 'Owner',
+				payment = 200,
+				isboss = true,
+			},
+		},
+		defaultDuty = false,
+		offDutyPay = false,
+	},
 }
