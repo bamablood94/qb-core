@@ -3,7 +3,7 @@ QBConfig = {}
 QBConfig.MaxPlayers = GetConvarInt('sv_maxclients', 64) -- Gets max players from config file, default 48
 QBConfig.DefaultSpawn = vector4(194.92, -916.3, 31.19, 238.3)
 QBConfig.UpdateInterval = 5 -- how often to update player data in minutes
-QBConfig.StatusInterval = 5000 -- how often to check hunger/thirst status in ms
+QBConfig.StatusInterval = 5000 -- how often to check hunger/thirst status in milliseconds
 
 QBConfig.Money = {}
 QBConfig.Money.MoneyTypes = { ['cash'] = 5000, ['bank'] = 5000, ['crypto'] = 0 } -- ['type']=startamount - Add or remove money types for your server (for ex. ['blackmoney']=0), remember once added it will not be removed from the database!
@@ -28,14 +28,20 @@ QBConfig.Player.Bloodtypes = {
 }
 
 QBConfig.Server = {} -- General server config
-QBConfig.Server.closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
-QBConfig.Server.closedReason = "Server Closed" -- Reason message to display when people can't join the server
-QBConfig.Server.uptime = 0 -- Time the server has been up.
-QBConfig.Server.whitelist = false -- Enable or disable whitelist on the server
-QBConfig.Server.pvp = true -- Enable or disable pvp on the server (Ability to shoot other players)
-QBConfig.Server.discord = "https://discord.gg/Z6pP5Ke2t9" -- Discord invite link
-QBConfig.Server.checkDuplicateLicense = true -- check for duplicate rockstar license on join
-QBConfig.Server.PermissionList = {} -- permission list
+QBConfig.Server.UseConnectQueue = true -- Use connectqueue as a queue for your server
+QBConfig.Server.Closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
+QBConfig.Server.ClosedReason = "Server Closed" -- Reason message to display when people can't join the server
+QBConfig.Server.Uptime = 0 -- Time the server has been up.
+QBConfig.Server.Whitelist = false -- Enable or disable whitelist on the server
+QBConfig.Server.WhitelistPermission = 'admin' -- Permission that's able to enter the server when the whitelist is on
+QBConfig.Server.PVP = true -- Enable or disable pvp on the server (Ability to shoot other players)
+QBConfig.Server.Discord = "https://discord.gg/Z6pP5Ke2t9" -- Discord invite link
+QBConfig.Server.CheckDuplicateLicense = true -- Check for duplicate rockstar license on join
+QBConfig.Server.PermissionList = {} -- Permission list for old permission system
+QBConfig.Server.UseOldPermissionSystem = false -- Use old permissions system from the database
+QBConfig.Server.AllPermissions = { -- Table of permissions which have access to everything for the new permissions system
+    'god',
+}
 
 QBConfig.Notify = {}
 
