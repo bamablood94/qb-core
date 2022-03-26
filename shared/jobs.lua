@@ -18,55 +18,38 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-				name = 'Cadet',
-				payment = 300
+				name = 'Recruit Officer',
+				payment = 100
 			},
 			['1'] = {
-				name = 'Officer',
-				payment = 360
+				name = 'Junior Officer',
+				payment = 200
 			},
 			['2'] = {
 				name = 'Senior Officer',
-				payment = 380
+				payment = 325
 			},
 			['3'] = {
-				name = 'Corporal',
-				payment = 400
+				name = 'FTO Officer',
+				payment = 450
 			},
 			['4'] = {
 				name = 'Sergeant',
-				isboss = true,
-				payment = 425
+				payment = 650
 			},
 			['5'] = {
 				name = 'Lieutenant',
-				isboss = true,
-				payment = 435
+				payment = 800
 			},
 			['6'] = {
 				name = 'Captain',
 				isboss = true,
-				payment = 470
+				payment = 900
 			},
 			['7'] = {
-				name = 'Major',
-				isboss = true,
-				payment = 480
-			},
-			['8'] = {
-				name = 'Assistant Chief',
-				isboss = true,
-				payment = 500
-			},
-			['9'] = {
-				name = 'Deputy Chief',
-				isboss = true,
-				payment = 510
-			},
-			['10'] = {
 				name = 'Chief',
 				isboss = true,
-				payment = 530
+				payment = 1000
 			},
 		},
 	},
