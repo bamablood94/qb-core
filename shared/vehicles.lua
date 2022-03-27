@@ -5224,6 +5224,15 @@ QBShared.Vehicles = {
 		['hash'] = `ja_demonboi`,
 		['shop'] = 'owners',
 	},
+	['nm_cayenne'] = {
+		['name'] = 'Cayenne ppv',
+		['brand'] = '2019 Porsche',
+		['model'] = 'nm_cayenne',
+		['price'] = 1000000,
+		['category'] = 'owners',
+		['hash'] = `nm_cayenne`,
+		['shop'] = 'owners',
+	},
 	--POLICE VEHICLES
 	['valor1bb'] = {
 		['name'] = 'Charger',
