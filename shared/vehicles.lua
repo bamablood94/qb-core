@@ -5206,7 +5206,24 @@ QBShared.Vehicles = {
 		['hash'] = `jround`,
 		['shop'] = 'owners',
 	},
-
+    ['gxrx7'] = {
+		['name'] = 'RX7',
+		['brand'] = '1999 Mazda',
+		['model'] = 'gxrx7',
+		['price'] = 1000000,
+		['category'] = 'owners',
+		['hash'] = `gxrx7`,
+		['shop'] = 'owners',
+	},
+	['ja_demonboi'] = {
+		['name'] = 'Challenger LS swap',
+		['brand'] = '2018 Dodge',
+		['model'] = 'ja_demonboi',
+		['price'] = 1000000,
+		['category'] = 'owners',
+		['hash'] = `ja_demonboi`,
+		['shop'] = 'owners',
+	},
 	--POLICE VEHICLES
 	['valor1bb'] = {
 		['name'] = 'Charger',
