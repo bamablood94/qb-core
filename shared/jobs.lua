@@ -1702,4 +1702,28 @@ QBShared.Jobs = {
 		defaultDuty = false,
 		offDutyPay = false,
 	},
+	["uwu"] = { 
+		label = "UwU Cafe",
+		grades = {
+            ['0'] = {
+                name = "Cashier",
+                payment = 150
+            },
+			['1'] = {
+                name = "Cook",
+                payment = 250
+            },
+			['2'] = {
+                name = "Manager",
+                payment = 350
+            },
+			['3'] = {
+                name = "Store Owner",
+				isboss = true,
+                payment = 350
+            },
+        },
+		defaultDuty = false,
+		offDutyPay = false
+	},
 }
