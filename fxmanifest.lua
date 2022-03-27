@@ -20,6 +20,7 @@ client_scripts {
 	'client/main.lua',
 	'client/functions.lua',
 	'client/loops.lua',
+	'client/drawtext.lua',
 	'client/events.lua'
 }
 
@@ -30,6 +31,7 @@ server_scripts {
 	'server/player.lua',
 	'server/events.lua',
 	'server/commands.lua',
+	'server/exports.lua',
 	'server/debug.lua'
 }
 
