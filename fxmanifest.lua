@@ -2,20 +2,26 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'QB-Core'
-version '1.1.0'
+version '1.0.0'
 
 shared_scripts {
-	'shared/*.lua',
+	'shared/locale.lua',
+	'locale/en.lua', -- replace with desired language
 	'config.lua',
-	'locale/en.lua' -- replace with desired language
+	'shared/main.lua',
+	'shared/items.lua',
+	'shared/jobs.lua',
+	'shared/vehicles.lua',
+	'shared/gangs.lua',
+	'shared/weapons.lua'
 }
 
 client_scripts {
 	'client/main.lua',
 	'client/functions.lua',
 	'client/loops.lua',
-	'client/events.lua',
-	'client/drawtext.lua'
+	'client/drawtext.lua',
+	'client/events.lua'
 }
 
 server_scripts {
@@ -33,11 +39,14 @@ ui_page 'html/index.html'
 
 files {
 	'html/index.html',
-	'html/css/style.css',
-	'html/css/drawtext.css',
-	'html/js/*.js'
+	'html/style.css',
+	'html/*.js'
 }
 
-dependency 'oxmysql'
+dependencies {
+	'oxmysql',
+	'progressbar',
+	'connectqueue'
+}
 
 lua54 'yes'
