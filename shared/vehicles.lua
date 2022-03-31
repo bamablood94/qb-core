@@ -5215,14 +5215,14 @@ QBShared.Vehicles = {
 		['hash'] = `gxrx7`,
 		['shop'] = 'owners',
 	},
-	['ja_demonboi'] = {
+	['demonboi'] = {
 		['name'] = 'Challenger LS swap',
 		['brand'] = '2018 Dodge',
-		['model'] = 'ja_demonboi',
+		['model'] = 'demonboi',
 		['price'] = 1000000,
 		['category'] = 'importowners',
-		['hash'] = `ja_demonboi`,
-		['shop'] = 'owners',
+		['hash'] = `demonboi`,
+		['shop'] = 'import',
 	},
 	['nm_cayenne'] = {
 		['name'] = 'Cayenne ppv',

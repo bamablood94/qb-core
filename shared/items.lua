@@ -3,18 +3,18 @@ QBShared.Items = {
 	-- WEAPONS
 
 	-- Addons
-	['weapon_g17']					 ={['name']  = 'weapon_g17',					['label'] = 'Glock 17',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_PISTOL',				['image'] = '',							['unique'] = true,      ['useable'] = true,		['description'] = 'Glock 17'},
-	['weapon_m870']					 ={['name']  = 'weapon_m870',					['label'] = 'M870',						['weight'] = 1000,      ['type'] = 'weapon',	['ammotype'] = 'AMMO_SHOTGUN',				['image'] = '',							['unique'] = true,   	['useable'] = true,		['description'] = 'M870'},
-	['weapon_mk18']					 ={['name']  = 'weapon_mk18',					['label'] = 'MK18',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_RIFLE',				['image'] = '',							['unique'] = true,		['useable'] = true,		['description'] = 'MK18'},
-	['weapon_mpx']					 ={['name']  = 'weapon_mpx',					['label'] = 'MPX',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SMG',					['image'] = '',							['unique'] = true,		['useable'] = true,		['description'] = 'MPX'},
-	['weapon_pp19']					 ={['name']  = 'weapon_pp19',					['label'] = 'PP19',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SMG',					['image'] = '',							['unique'] = true,		['useable'] = true,		['description'] = 'PP19'},        
-	['weapon_bats']				 	 ={['name']  = 'weapon_bats',					['label'] = 'BATS',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'BATS'},
-	['weapon_katanas']				 ={['name']  = 'weapon_katanas',				['label'] = 'KATANAS',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'KATANAS'},
-	['weapon_shiv']				 	 ={['name']  = 'weapon_shiv',					['label'] = 'SHIV',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'SHIV'},
-	['weapon_dp9']				 	 ={['name']  = 'weapon_dp9',					['label'] = 'DP9',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_PISTOL',				['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'DP9'},
-	['weapon_ltl']					 ={['name']  = 'weapon_ltl',					['label'] = 'LTL',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SHOTGUN',				['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'LTL'},
-	['weapon_browning']				 ={['name']  = 'weapon_browning',				['label'] = 'Browning',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_PISTOL',				['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'Browning'},
-	['weapon_staff']				 ={['name']  = 'weapon_staff',					['label'] = 'Staff',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = '',							['unique'] = true,		['useable'] = true,	    ['description'] = 'Staff'},
+	['weapon_g17']					 ={['name']  = 'weapon_g17',					['label'] = 'Glock 17',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_PISTOL',				['image'] = 'weapon_g17.png',			['unique'] = true,      ['useable'] = true,		['description'] = 'Glock 17'},
+	['weapon_m870']					 ={['name']  = 'weapon_m870',					['label'] = 'M870',						['weight'] = 1000,      ['type'] = 'weapon',	['ammotype'] = 'AMMO_SHOTGUN',				['image'] = 'weapon_m870.png',			['unique'] = true,   	['useable'] = true,		['description'] = 'M870'},
+	['weapon_mk18']					 ={['name']  = 'weapon_mk18',					['label'] = 'MK18',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_RIFLE',				['image'] = 'weapon_mk18.png',			['unique'] = true,		['useable'] = true,		['description'] = 'MK18'},
+	['weapon_mpx']					 ={['name']  = 'weapon_mpx',					['label'] = 'MPX',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SMG',					['image'] = 'weapon_mpx.png',			['unique'] = true,		['useable'] = true,		['description'] = 'MPX'},
+	['weapon_pp19']					 ={['name']  = 'weapon_pp19',					['label'] = 'PP19',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SMG',					['image'] = 'weapon_pp19.png',			['unique'] = true,		['useable'] = true,		['description'] = 'PP19'},        
+	['weapon_bats']				 	 ={['name']  = 'weapon_bats',					['label'] = 'BATS',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = 'weapon_bats.png',			['unique'] = true,		['useable'] = true,	    ['description'] = 'BATS'},
+	['weapon_katanas']				 ={['name']  = 'weapon_katanas',				['label'] = 'KATANAS',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = 'weapon_katanas.png',		['unique'] = true,		['useable'] = true,	    ['description'] = 'KATANAS'},
+	['weapon_shiv']				 	 ={['name']  = 'weapon_shiv',					['label'] = 'SHIV',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = 'weapon_shiv.png',			['unique'] = true,		['useable'] = true,	    ['description'] = 'SHIV'},
+	['weapon_dp9']				 	 ={['name']  = 'weapon_dp9',					['label'] = 'DP9',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_PISTOL',				['image'] = 'weapon_dp9.png',			['unique'] = true,		['useable'] = true,	    ['description'] = 'DP9'},
+	['weapon_ltl']					 ={['name']  = 'weapon_ltl',					['label'] = 'LTL',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SHOTGUN',				['image'] = 'weapon_ltl.png',			['unique'] = true,		['useable'] = true,	    ['description'] = 'LTL'},
+	['weapon_browning']				 ={['name']  = 'weapon_browning',				['label'] = 'Browning',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_PISTOL',				['image'] = 'weapon_browning.png',		['unique'] = true,		['useable'] = true,	    ['description'] = 'Browning'},
+	['weapon_staff']				 ={['name']  = 'weapon_staff',					['label'] = 'Staff',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = nil,							['image'] = 'weapon_staff.png',			['unique'] = true,		['useable'] = true,	    ['description'] = 'Staff'},
 	['weapon_beanbag']				 ={['name']  = 'weapon_beanbag',				['label'] = 'Beanbag',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_BEANBAG',				['image'] = 'weapon_combatshotgun.png',	['unique'] = true,		['useable'] = true,	    ['description'] = 'Beanbag Shotgun'},
 
 	-- Melee
@@ -417,6 +417,7 @@ QBShared.Items = {
 	['beanbag_ammo']				 = {['name'] = 'beanbag_ammo',					['label'] = 'Beanbag Ammo',				['weight'] = 200,       ['type'] = 'item',      ['image'] = 'beanbag_ammo.png',         ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Beanbag Shotgun'},
 	["taser_ammo"]                    = {["name"] = "taser_ammo",                     ["label"] = "Taser Cartridges",         ["weight"] = 3000,      ["type"] = "item",      ["image"] = "taser_ammo.png",            ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "No More Spamming the Trigger! LOL"},
 	["rpg_ammo"]					 = {["name"] = "rpg_ammo",						['label'] = "RPG Missile",              ["weight"] = 5000,      ['type'] = 'item',      ['image'] = 'rpg_ammo.png',             ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = "Ammo for the RPG"},
+	['taser_ammo']					 ={['name'] = 'taser_ammo',						['label'] = 'Taser Ammo',				['weight'] = 1000,		['type'] = 'item',		['image'] = 'taserammo.png',			['unique'] = false,		['useable'] = true,		['shouldClose'] = true,		['combinable'] = nil,	['description'] = 'Ammo for Taser'},
 	
 	-- Card ITEMS
 	['permit']						 = {['name'] = 'permit',						['label'] = 'Driving Permit',			['weight'] = 0,			['type'] = 'item',		['image'] = 'id_card.png',				['unique'] = true,		['useable'] = true,		['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'A Driving permit to show you can drive a vehicle as long as you have a passenger'},
@@ -431,6 +432,7 @@ QBShared.Items = {
 	['scratch_ticket']               = {['name'] = 'scratch_ticket',				['label'] = 'Scratch Off Ticket',		['weight'] = 0.10,		['type'] = 'item',      ['image'] = 'scratch_ticket.png',		['unique'] = false,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Take your chance at winning BIG!'},
 	["govbadge"] 				 	 = {["name"] = "govbadge", 			  			["label"] = "Government ID", 			["weight"] = 1000, 		["type"] = "item", 		["image"] = "govbadge.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Special Badge for Government Officials"},
 	["specialbadge"] 				 = {["name"] = "specialbadge", 			  		["label"] = "Government ID", 			["weight"] = 1000, 		["type"] = "item", 		["image"] = "govbadge.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "Special Badge for Government Officials"},
+	["payticket"] 					 = {["name"] = "payticket", 				["label"] = "Receipt", 	     			["weight"] = 150, 		["type"] = "item", 		["image"] = "ticket.png", 				["unique"] = false,   	["useable"] = false,    ["shouldClose"] = false,    ["combinable"] = nil,   ["description"] = "Cash these in at the bank!"},
 
 	-- Eat ITEMS
 	['tosti'] 						 = {['name'] = 'tosti', 			 	  	  	['label'] = 'Grilled Cheese Sandwich', 	['weight'] = 200, 		['type'] = 'item', 		['image'] = 'tosti.png', 				['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,   	['combinable'] = nil,   	['description'] = 'Nice to eat'},
@@ -691,5 +693,67 @@ QBShared.Items = {
 	["tapioca"]							 = { ["name"] = "tapioca", ["label"] = "Tapioca", ["weight"] = 100, ["type"] = "item", ["image"] = "tapioca.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Tapioca" },
 	["strawberries"]					 = { ["name"] = "strawberries", ["label"] = "Strawberries", ["weight"] = 100, ["type"] = "item", ["image"] = "strawberries.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "strawberries" },
 	["rawtea"]							 = { ["name"] = "rawtea", ["label"] = "Raw Tea", ["weight"] = 100, ["type"] = "item", ["image"] = "rawtea.png", ["unique"] = false, ["useable"] = true, ["shouldClose"] = true, ["combinable"] = nil, ["description"] = "Raw Tea" },
+
+	--CRAFTING
+	['carbineriflemk2_blueprint']		= {['name'] = 'carbineriflemk2_blueprint', ['label'] = 'Carbine Rifle MK2 Blueprint', ['weight'] = 100, ['type'] = 'item', ['image'] = 'carbineriflemk2_blueprint.png', ['unique'] = false, ['useable'] = false, ['shouldClose'] = false, ['combinable'] = nil, ['description'] = 'Blueprint For Crafting'},
+
+	--jim-mechanic Vehicles
+	["mechanic_tools"] 				= {["name"] = "mechanic_tools", 			["label"] = "Mechanic tools", 		    ["weight"] = 0, 		["type"] = "item", 		["image"] = "mechanic_tools.png", 		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Needed for vehicle repairs"},
+	["toolbox"] 					= {["name"] = "toolbox", 			 	  	["label"] = "Toolbox", 		            ["weight"] = 0, 		["type"] = "item", 		["image"] = "toolbox.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Needed for Performance part removal"},
+	["ducttape"] 					= {["name"] = "ducttape", 			 	  	["label"] = "Duct Tape", 		       	["weight"] = 0, 		["type"] = "item", 		["image"] = "bodyrepair.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Good for quick fixes"},
+	
+	--Performance
+	["turbo"] 		 	 		 	= {["name"] = "turbo", 						["label"] = "Supercharger Turbo", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "turbo.png", 				["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Who doesn't need a 65mm Turbo??"},
+	["car_armor"] 					= {["name"] = "car_armor", 					["label"] = "Vehicle Armor", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "armour.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	
+	["nos"] 					    = {["name"] = "nos", 			 	  	  	["label"] = "NOS Bottle", 		        ["weight"] = 0, 		["type"] = "item", 		["image"] = "nos.png", 				    ["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "A full bottle of NOS"},
+	["noscan"] 					    = {["name"] = "noscan", 			 	  	["label"] = "Empty NOS Bottle", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "noscan.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,  ["combinable"] = nil,   ["description"] = "An Empty bottle of NOS"},
+
+	["engine1"] 				    = {["name"] = "engine1", 			 	  	["label"] = "Shonen Engine",            ["weight"] = 0, 		["type"] = "item", 		["image"] = "shonen.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["engine2"] 				    = {["name"] = "engine2", 			 	  	["label"] = "V8 Engine",        	    ["weight"] = 0, 		["type"] = "item", 		["image"] = "v8engine.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["engine3"] 				    = {["name"] = "engine3", 			 	  	["label"] = "V10 Engine",          		["weight"] = 0, 		["type"] = "item", 		["image"] = "v10engine.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["engine4"] 				    = {["name"] = "engine4", 			 	  	["label"] = "V12 Engine",               ["weight"] = 0, 		["type"] = "item", 		["image"] = "v12engine.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+	["transmission1"] 				= {["name"] = "transmission1", 				["label"] = "Transmission Lvl 1",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "transmission1.png",  		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["transmission2"] 				= {["name"] = "transmission2", 				["label"] = "Transmission Lvl 2",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "transmission2.png",  		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["transmission3"] 				= {["name"] = "transmission3",				["label"] = "Transmission Lvl 3",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "transmission3.png",   		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+	["brakes1"] 					= {["name"] = "brakes1", 			 		["label"] = "Performance Brakes",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "brakes1.png", 		    	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["brakes2"] 					= {["name"] = "brakes2", 			 		["label"] = "GT Big Brakes",            ["weight"] = 0, 		["type"] = "item", 		["image"] = "brakes2.png", 		    	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["brakes3"] 					= {["name"] = "brakes3", 			 		["label"] = "Competition Brakes",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "brakes3.png", 		    	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	
+	["suspension1"] 				= {["name"] = "suspension1", 				["label"] = "Lowered Suspension", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension1.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["suspension2"] 				= {["name"] = "suspension2",  				["label"] = "Street Suspension",		["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension2.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Street Racing level Suspension"},
+	["suspension3"] 				= {["name"] = "suspension3",  				["label"] = "Racing Suspension",		["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension3.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Street Racing level Suspension"},
+	["suspension4"] 				= {["name"] = "suspension4",  				["label"] = "Rally Suspension",			["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension4.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Street Racing level Suspension"},
+	
+	["bprooftires"] 				= {["name"] = "bprooftires", 			   	["label"] = "Bulletproof Tires", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "bprooftires.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["drifttires"] 					= {["name"] = "drifttires", 			   	["label"] = "Drift Tires", 				["weight"] = 0, 		["type"] = "item", 		["image"] = "drifttires.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	
+	--Cosmetics
+	["underglow_controller"] 		 = {["name"] = "underglow_controller", 		["label"] = "Neon Controller", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "underglow_controller.png", ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   	["description"] = "RGB LED Vehicle Remote"},
+	["headlights"] 		 	 		 = {["name"] = "headlights", 				["label"] = "Xenon Headlights", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "headlights.png", 			["unique"] = true, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   	["description"] = "8k HID headlights"},
+	
+	["tint_supplies"] 				 = {["name"] = "tint_supplies", 			["label"] = "Tint Supplies", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "tint_supplies.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,    ["description"] = "Supplies for window tinting"},
+
+	["customplate"] 				 = {["name"] = "customplate", 				["label"] = "Customized Plates", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "plate.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["hood"] 						 = {["name"] = "hood", 						["label"] = "Vehicle Hood", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "hood.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["roof"] 						 = {["name"] = "roof", 						["label"] = "Vehicle Roof", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "roof.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["spoiler"] 					 = {["name"] = "spoiler", 					["label"] = "Vehicle Spoiler", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "spoiler.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["bumper"] 						 = {["name"] = "bumper", 					["label"] = "Vehicle Bumper", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "bumper.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["skirts"] 						 = {["name"] = "skirts", 					["label"] = "Vehicle Skirts", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "skirts.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["exhaust"] 					 = {["name"] = "exhaust", 					["label"] = "Vehicle Exhaust", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "exhaust.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["seat"] 						 = {["name"] = "seat", 						["label"] = "Seat Cosmetics", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "seat.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+	["rims"] 						 = {["name"] = "rims", 						["label"] = "Custom Wheel Rims", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "rims.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	
+	["livery"] 						 = {["name"] = "livery", 					["label"] = "Livery Roll", 				["weight"] = 0, 		["type"] = "item", 		["image"] = "livery.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["paintcan"] 					 = {["name"] = "paintcan", 					["label"] = "Vehicle Spray Can", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "weapontint_orange.png", 	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["tires"] 						 = {["name"] = "tires", 					["label"] = "Drift Smoke Tires",        ["weight"] = 0, 		["type"] = "item", 		["image"] = "tires.png", 	  		    ["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+	["horn"] 						 = {["name"] = "horn", 						["label"] = "Custom Vehicle Horn", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "horn.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+	["internals"] 					 = {["name"] = "internals", 				["label"] = "Internal Cosmetics", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "internals.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+	["externals"] 					 = {["name"] = "externals", 				["label"] = "Exterior Cosmetics", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "mirror.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
 
 }
