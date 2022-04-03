@@ -64,6 +64,12 @@ local function OnPlayerConnecting(name, setKickReason, deferrals)
     -- mandatory wait!
     Wait(0)
 
+    if QBCore.Config.Server.Closed then
+        if not IsPlayerAceAllowed(src, 'qbadmin.join') then
+            deferrals.done(QBCore.Config.Server.ClosedReason)
+        end
+    end
+
     deferrals.update(string.format('Hello %s. Validating Your Rockstar License', name))
 
     for _, v in pairs(identifiers) do
@@ -207,21 +213,15 @@ end)
 
 RegisterNetEvent('QBCore:CallCommand', function(command, args)
     local src = source
-    if QBCore.Commands.List[command] then
-        local Player = QBCore.Functions.GetPlayer(src)
-        if Player then
-            local isGod = QBCore.Functions.HasPermission(src, 'god')
-            local hasPerm = QBCore.Functions.HasPermission(src, QBCore.Commands.List[command].permission)
-            local isPrincipal = IsPlayerAceAllowed(src, 'command')
-            if (QBCore.Commands.List[command].permission == Player.PlayerData.job.name) or isGod or hasPerm or isPrincipal then
-                if (QBCore.Commands.List[command].argsrequired and #QBCore.Commands.List[command].arguments ~= 0 and args[#QBCore.Commands.List[command].arguments] == nil) then
-                    TriggerClientEvent('QBCore:Notify', src, Lang:t('error.missing_args2'), 'error')
-                else
-                    QBCore.Commands.List[command].callback(src, args)
-                end
-            else
-                TriggerClientEvent('QBCore:Notify', src, Lang:t('error.no_access'), 'error')
-            end
+    if not QBCore.Commands.List[command] then return end
+    local Player = QBCore.Functions.GetPlayer(src)
+    if not Player then return end
+    local hasPerm = QBCore.Functions.HasPermission(src, QBCore.Commands.List[command].permission)
+    if hasPerm then
+        if QBCore.Commands.List[command].argsrequired and #QBCore.Commands.List[command].arguments ~= 0 and not args[#QBCore.Commands.List[command].arguments] then
+            TriggerClientEvent('QBCore:Notify', src, Lang:t('error.missing_args2'), 'error')
+        else
+            QBCore.Commands.List[command].callback(src, args)
         end
     end
 end)

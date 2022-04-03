@@ -28,19 +28,21 @@ QBConfig.Player.Bloodtypes = {
 }
 
 QBConfig.Server = {} -- General server config
-QBConfig.Server.closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
-QBConfig.Server.closedReason = "Server Closed" -- Reason message to display when people can't join the server
-QBConfig.Server.uptime = 0 -- Time the server has been up.
-QBConfig.Server.whitelist = false -- Enable or disable whitelist on the server
-QBConfig.Server.pvp = true -- Enable or disable pvp on the server (Ability to shoot other players)
-QBConfig.Server.discord = "https://discord.gg/Z6pP5Ke2t9" -- Discord invite link
-QBConfig.Server.checkDuplicateLicense = true -- check for duplicate rockstar license on join
-QBConfig.Server.PermissionList = {} -- permission list
+QBConfig.Server.UseConnectQueue = true -- Use connectqueue as a queue for your server
+QBConfig.Server.Closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
+QBConfig.Server.ClosedReason = "Server Closed, Contact Owner." -- Reason message to display when people can't join the server
+QBConfig.Server.Uptime = 0 -- Time the server has been up.
+QBConfig.Server.Whitelist = false -- Enable or disable whitelist on the server
+QBConfig.Server.WhitelistPermission = 'admin' -- Permission that's able to enter the server when the whitelist is on
+QBConfig.Server.PVP = true -- Enable or disable pvp on the server (Ability to shoot other players)
+QBConfig.Server.Discord = "https://discord.gg/Z6pP5Ke2t9" -- Discord invite link
+QBConfig.Server.CheckDuplicateLicense = true -- Check for duplicate rockstar license on join
+QBConfig.Server.Permissions = {'owner', 'hadmin', 'hstaff', 'leaddev', 'admin', 'moderator', 'staff', 'developer'} -- Add as many groups as you want here after creating them in your server.cfg
 
 QBConfig.Notify = {}
 
 QBConfig.Notify.NotificationStyling = {
-    group = false, -- Allow notifications to stack with a badge instead of repeating
+    group = true, -- Allow notifications to stack with a badge instead of repeating
     position = "top-right", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
     progress = true -- Display Progress Bar
 }
