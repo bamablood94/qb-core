@@ -26,3 +26,12 @@ CreateThread(function()
         end
     end
 end)
+
+CreateThread(function()
+    while true do
+        Wait(10000)
+        if Queue.IsReady() then
+            SetConvarServerInfo("Queue", "Queue Enabled | Count: " .. Queue.Exports:GetSize())
+        end
+    end
+end)
