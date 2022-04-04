@@ -157,6 +157,7 @@ QBShared.Weapons = {
 	[`weapon_mk18`]					 ={['name']  = 'weapon_mk18',					['label'] = 'MK18',						['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_mpx`]					 ={['name']  = 'weapon_mpx',					['label'] = 'MPX',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_pp19`]					 ={['name']  = 'weapon_pp19',					['label'] = 'PP19',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
-
+	[`weapon_huntingrifle`]			 ={['name']  = 'weapon_huntingrifle',			['label'] = 'Hunting Rifle',			['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Sniped'},
+	[`weapon_bow`]					 ={['name']  = 'weapon_bow',					['label'] = 'Bow',						['ammotype'] = 'AMMO_ARROW',	['damagereason'] = 'Speared'},
 	-- Melee
 }

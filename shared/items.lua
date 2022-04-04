@@ -34,6 +34,9 @@ QBShared.Items = {
 
 	['weapon_beanbag']				 ={['name']  = 'weapon_beanbag',				['label'] = 'Beanbag',					['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_BEANBAG',				['image'] = 'weapon_combatshotgun.png',	['unique'] = true,		['useable'] = true,	    ['description'] = 'Beanbag Shotgun'},
 
+	['weapon_huntingrifle']			 ={['name'] = 'weapon_huntingrifle',			['label'] = 'Hunting Rifle',			['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_SNIPER',			['image'] = 'weapon_huntingrifle.png',		['unique'] = true,		['useable'] = true,			['description'] = 'Rifle Meant for Hunting ONLY!'},
+
+	['weapon_bow']	 				 ={['name'] = 'weapon_bow',						['label'] = 'Bow',						['weight'] = 1000,		['type'] = 'weapon',	['ammotype'] = 'AMMO_ARROW',			['image'] = 'weapon_bow.png',				['unique'] = true,		['useable'] = true,		['description'] = 'Oh What a cool bow'},
 
 
 	-- Melee
@@ -767,13 +770,11 @@ QBShared.Items = {
 
 	['beanbag_ammo']				 = {['name'] = 'beanbag_ammo',					['label'] = 'Beanbag Ammo',				['weight'] = 200,       ['type'] = 'item',      ['image'] = 'beanbag_ammo.png',         ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = 'Ammo for Beanbag Shotgun'},
 
-	["taser_ammo"]                    = {["name"] = "taser_ammo",                     ["label"] = "Taser Cartridges",         ["weight"] = 3000,      ["type"] = "item",      ["image"] = "taser_ammo.png",            ["unique"] = false,     ["useable"] = true,     ["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "No More Spamming the Trigger! LOL"},
-
 	["rpg_ammo"]					 = {["name"] = "rpg_ammo",						['label'] = "RPG Missile",              ["weight"] = 5000,      ['type'] = 'item',      ['image'] = 'rpg_ammo.png',             ['unique'] = false,     ['useable'] = true,     ['shouldClose'] = true,   ['combinable'] = nil,   ['description'] = "Ammo for the RPG"},
 
 	['taser_ammo']					 ={['name'] = 'taser_ammo',						['label'] = 'Taser Ammo',				['weight'] = 1000,		['type'] = 'item',		['image'] = 'taserammo.png',			['unique'] = false,		['useable'] = true,		['shouldClose'] = true,		['combinable'] = nil,	['description'] = 'Ammo for Taser'},
 
-	
+	['bow_ammo']					 ={['name'] = 'bow_ammo',						['label'] = 'Arrows',					['weight'] = 100,		['type'] = 'item',		['image'] = 'arrow.png',				['unique'] = false,		['useable'] = true,		['shouldClose'] = true,	   ['combinable'] = nil,	['description'] = 'Ammo for the Bow'},
 
 	-- Card ITEMS
 
