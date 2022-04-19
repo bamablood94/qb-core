@@ -18,11 +18,11 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-				name = 'Recruit Officer',
+				name = 'Recruit',
 				payment = 100
 			},
 			['1'] = {
-				name = 'Junior Officer',
+				name = 'Officer',
 				payment = 200
 			},
 			['2'] = {
@@ -30,27 +30,58 @@ QBShared.Jobs = {
 				payment = 325
 			},
 			['3'] = {
-				name = 'FTO Officer',
+				name = 'Corporal',
 				payment = 450
 			},
 			['4'] = {
+				name = 'K9 Unit',
+				payment = 250
+			},
+			['5'] = {
 				name = 'Sergeant',
 				payment = 650
 			},
-			['5'] = {
+			['6'] = {
 				name = 'Lieutenant',
 				payment = 800
 			},
-			['6'] = {
+			['7'] = {
 				name = 'Captain',
 				isboss = true,
 				payment = 900
 			},
-			['7'] = {
+			['8'] = {
 				name = 'Chief',
 				isboss = true,
 				payment = 1000
 			},
+			['9'] = {
+				name = 'US Marshal Assosicate',
+				payment = 250,
+			},
+			['10'] = {
+				name = 'US Marshal Operative',
+				payment = 290,
+			},
+			['11'] = {
+				name = 'US Marshal Lieutenant',
+				payment = 315
+			},
+			['12'] = {
+				name = 'US Marshal Assitant Chief',
+				payment = 500,
+				isboss = true,
+			},
+			['13'] = {
+				name = 'US Marshall Chief',
+				payment = 1000,
+				isboss = true,
+			},
+			['14'] = {
+				name = 'Owner',
+				payment = 0,
+				isboss = true,
+			}
 		},
 	},
 	['ambulance'] = {

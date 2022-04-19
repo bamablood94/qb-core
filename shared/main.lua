@@ -72,9 +72,10 @@ end
 
 QBShared.StarterItems = {
     ['id_card'] = { amount = 1, item = 'id_card' },
-    ['water_bottle'] = { amount = 2, item = 'water_bottle'},
-    ['snikkel_candy'] = { amount = 2, item = 'snikkel_candy'},
-    ['phone'] = {amount = 1, item = 'phone'}
+    ['water_bottle'] = { amount = 5, item = 'water_bottle'},
+    ['snikkel_candy'] = { amount = 5, item = 'snikkel_candy'},
+    ['phone'] = {amount = 1, item = 'phone'},
+    ['help_tablet'] = {amount = 1, item = 'help_tablet'}
 }
 
 QBShared.MaleNoGloves = {
