@@ -1,13 +1,13 @@
 QBConfig = {}
 
-QBConfig.MaxPlayers = GetConvarInt('sv_maxclients', 64) -- Gets max players from config file, default 48
-QBConfig.DefaultSpawn = vector4(194.92, -916.3, 31.19, 238.3)
+QBConfig.MaxPlayers = GetConvarInt('sv_maxclients', 48) -- Gets max players from config file, default 48
+QBConfig.DefaultSpawn = vector4(-1035.71, -2731.87, 12.86, 0.0)
 QBConfig.UpdateInterval = 5 -- how often to update player data in minutes
-QBConfig.StatusInterval = 5000 -- how often to check hunger/thirst status in ms
+QBConfig.StatusInterval = 5000 -- how often to check hunger/thirst status in milliseconds
 
 QBConfig.Money = {}
-QBConfig.Money.MoneyTypes = { ['cash'] = 5000, ['bank'] = 5000, ['crypto'] = 0 } -- ['type']=startamount - Add or remove money types for your server (for ex. ['blackmoney']=0), remember once added it will not be removed from the database!
-QBConfig.Money.DontAllowMinus = { 'cash', 'crypto' } -- Money that is not allowed going in minus
+QBConfig.Money.MoneyTypes = {['cash'] = 5000, ['bank'] = 5000, ['crypto'] = 0} -- ['type'] = startamount - Add or remove money types for your server (for ex. ['blackmoney'] = 0), remember once added it will not be removed from the database!
+QBConfig.Money.DontAllowMinus = {'cash', 'crypto'} -- Money that is not allowed going in minus
 QBConfig.Money.PayCheckTimeOut = 7 -- The time in minutes that it will give the paycheck
 QBConfig.Money.PayCheckSociety = true -- If true paycheck will come from the society account that the player is employed at, requires qb-bossmenu
 
@@ -17,30 +17,25 @@ QBConfig.Player.MaxInvSlots = 41 -- Max inventory slots for a player
 QBConfig.Player.HungerRate = 4.2 -- Rate at which hunger goes down.
 QBConfig.Player.ThirstRate = 3.8 -- Rate at which thirst goes down.
 QBConfig.Player.Bloodtypes = {
-    "A+",
-    "A-",
-    "B+",
-    "B-",
-    "AB+",
-    "AB-",
-    "O+",
-    "O-",
+    "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-",
 }
 
 QBConfig.Server = {} -- General server config
-QBConfig.Server.closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
-QBConfig.Server.closedReason = "Server Closed" -- Reason message to display when people can't join the server
-QBConfig.Server.uptime = 0 -- Time the server has been up.
-QBConfig.Server.whitelist = false -- Enable or disable whitelist on the server
-QBConfig.Server.pvp = true -- Enable or disable pvp on the server (Ability to shoot other players)
-QBConfig.Server.discord = "https://discord.gg/Z6pP5Ke2t9" -- Discord invite link
-QBConfig.Server.checkDuplicateLicense = true -- check for duplicate rockstar license on join
-QBConfig.Server.PermissionList = {} -- permission list
+QBConfig.Server.UseConnectQueue = true -- Use connectqueue as a queue for your server
+QBConfig.Server.Closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')
+QBConfig.Server.ClosedReason = "Server Closed" -- Reason message to display when people can't join the server
+QBConfig.Server.Uptime = 0 -- Time the server has been up.
+QBConfig.Server.Whitelist = false -- Enable or disable whitelist on the server
+QBConfig.Server.WhitelistPermission = 'admin' -- Permission that's able to enter the server when the whitelist is on
+QBConfig.Server.PVP = true -- Enable or disable pvp on the server (Ability to shoot other players)
+QBConfig.Server.Discord = "" -- Discord invite link
+QBConfig.Server.CheckDuplicateLicense = true -- Check for duplicate rockstar license on join
+QBConfig.Server.Permissions = {'god', 'admin', 'mod'} -- Add as many groups as you want here after creating them in your server.cfg
 
 QBConfig.Notify = {}
 
 QBConfig.Notify.NotificationStyling = {
-    group = false, -- Allow notifications to stack with a badge instead of repeating
+    group = true, -- Allow notifications to stack with a badge instead of repeating
     position = "top-right", -- top-left | top-right | bottom-left | bottom-right | top | bottom | left | right | center
     progress = true -- Display Progress Bar
 }

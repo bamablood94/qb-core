@@ -18,11 +18,11 @@ QBShared.Jobs = {
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-				name = 'Recruit Officer',
+				name = 'Recruit',
 				payment = 100
 			},
 			['1'] = {
-				name = 'Junior Officer',
+				name = 'Officer',
 				payment = 200
 			},
 			['2'] = {
@@ -30,27 +30,58 @@ QBShared.Jobs = {
 				payment = 325
 			},
 			['3'] = {
-				name = 'FTO Officer',
+				name = 'Corporal',
 				payment = 450
 			},
 			['4'] = {
+				name = 'K9 Unit',
+				payment = 250
+			},
+			['5'] = {
 				name = 'Sergeant',
 				payment = 650
 			},
-			['5'] = {
+			['6'] = {
 				name = 'Lieutenant',
 				payment = 800
 			},
-			['6'] = {
+			['7'] = {
 				name = 'Captain',
 				isboss = true,
 				payment = 900
 			},
-			['7'] = {
+			['8'] = {
 				name = 'Chief',
 				isboss = true,
 				payment = 1000
 			},
+			['9'] = {
+				name = 'US Marshal Assosicate',
+				payment = 250,
+			},
+			['10'] = {
+				name = 'US Marshal Operative',
+				payment = 290,
+			},
+			['11'] = {
+				name = 'US Marshal Lieutenant',
+				payment = 315
+			},
+			['12'] = {
+				name = 'US Marshal Assitant Chief',
+				payment = 500,
+				isboss = true,
+			},
+			['13'] = {
+				name = 'US Marshall Chief',
+				payment = 1000,
+				isboss = true,
+			},
+			['14'] = {
+				name = 'Owner',
+				payment = 0,
+				isboss = true,
+			}
 		},
 	},
 	['ambulance'] = {
@@ -899,584 +930,34 @@ QBShared.Jobs = {
             },
         },
 	},
-	['mechanic1'] = {
-		label = 'dontuse',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic15'] = {
-		label = 'Mayan Customs',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic2'] = {
-		label = 'LS Customs',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic3'] = {
-		label = 'Sports Race',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic4'] = {
-		label = 'Harmony Repair',
+	['snowsmechanicshop'] = {
+		label = 'Mechanic',
 		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
+				name = 'Associate',
+				payment = 100,
+			},
 			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
+				name = 'Mechanic',
+				payment = 125,
+			},
 			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
+				name = 'Lead Mechanic',
+				payment = 150,
+			},
 			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
+				name = 'Manager',
+				payment = 175,
+				isboss = true,
+			},
 			['4'] = {
-                name = 'Manager',
+				name = 'Owner',
+				payment = 200,
 				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic5'] = {
-		label = 'AoD MC Mech',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic6'] = {
-		label = 'SoA MC Mech',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic7'] = {
-		label = 'Auto Exotic Shop',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic8'] = {
-		label = 'Angels Automotive',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic9'] = {
-		label = 'Redline Tuner Shop',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic10'] = {
-		label = 'Damned MC',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	['mechanic11'] = {
-		label = 'Snows Auto-body',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-
-	['mechanic12'] = {
-		label = 'Super Performance',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-
-	['mechanic13'] = {
-		label = 'Paradise Autos',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-	
-	['mechanic14'] = {
-		label = 'Mayhem Motors',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-            ['0'] = {
-                name = 'Recruit',
-                payment = 150
-            },
-			['1'] = {
-                name = 'Novice',
-                payment = 165
-            },
-			['2'] = {
-                name = 'Experienced',
-                payment = 160
-            },
-			['3'] = {
-                name = 'Advanced',
-                payment = 185
-            },
-			['4'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['5'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-
-	['mauto'] = {
-		label = 'Mixed Automotive',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-                name = 'Employee',
-                payment = 100
-            },
-			['1'] = {
-                name = 'Supervisor',
-                payment = 160
-            },
-			['2'] = {
-                name = 'Head Of Staff',
-                payment = 185
-            },
-			['3'] = {
-                name = 'COO',
-				isboss = true,
-                payment = 190
-            },
-			['4'] = {
-                name = 'CEO',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-
-	['fpharmacy'] = {
-		label = 'Family Pharmacy',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-                name = 'Clerk',
-                payment = 160
-            },
-			['1'] = {
-                name = 'Assistant',
-                payment = 185
-            },
-			['2'] = {
-                name = 'Manager',
-				isboss = true,
-                payment = 190
-            },
-			['3'] = {
-                name = 'Pharmacist',
-				isboss = true,
-                payment = 220
-            },
-        },
-	},
-		
-	['pfc'] = {
-		label = 'Patoche Fight Club',
-		defaultDuty = false,
-		offDutyPay = false,
-		grades = {
-			['0'] = {
-                name = 'InTraining',
-                payment = 160
-            },
-			['1'] = {
-                name = 'Employee',
-                payment = 185
-            },
-			['2'] = {
-                name = 'Combatant',
-                payment = 190
-            },
-			['3'] = {
-                name = 'Owner',
-				isboss = true,
-                payment = 220
-            },
-        },
+			}
+		}
 	},
 	--CUSTOM--
 	['beanmachine'] = {

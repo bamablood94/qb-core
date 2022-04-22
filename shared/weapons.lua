@@ -143,11 +143,11 @@ QBShared.Weapons = {
 	[`weapon_fire`]					= {['name'] = 'weapon_fire',				['label'] = 'Fire',						['ammotype'] = nil,						['damagereason'] = 'Torched / Flambeed / Barbecued'},
 
 	-- Animals
-	[`weapon_animal`]				= {['name'] = 'weapon_animal',	['label'] = 'Animal',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
-    [`weapon_cougar`]				= {['name'] = 'weapon_cougar',	['label'] = 'Cougar',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+	[`weapon_animal`]				= {['name'] = 'weapon_animal',				['label'] = 'Animal',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
+    [`weapon_cougar`]				= {['name'] = 'weapon_cougar',				['label'] = 'Cougar',	['ammotype'] = nil,	['damagereason'] = 'Mauled'},
 
 	--Addon Weapons
-	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',					['label'] = 'Beanbag Shotgun', 			['ammotype'] = 'AMMO_SHOTGUN', 	['damagereason'] = 'Beanbagged'},
+	[`weapon_beanbag`]				= {['name'] = 'weapon_beanbag',					['label'] = 'Beanbag Shotgun', 			['ammotype'] = 'AMMO_BEANBAG', 	['damagereason'] = 'Beanbagged'},
 	[`weapon_dp9`]				 	 ={['name']  = 'weapon_dp9',					['label'] = 'DP9',						['ammotype'] = nil, 			['damagereason'] = 'DP9'},
 	[`weapon_ltl`]					 ={['name']  = 'weapon_ltl',					['label'] = 'LTL',						['ammotype'] = nil, 			['damagereason'] = 'LTL'},
 	[`weapon_browning`]				 ={['name']  = 'weapon_browning',				['label'] = 'Browning',					['ammotype'] = nil, 			['damagereason'] = 'Browning'},
@@ -157,6 +157,21 @@ QBShared.Weapons = {
 	[`weapon_mk18`]					 ={['name']  = 'weapon_mk18',					['label'] = 'MK18',						['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Ended / Rifled / Shot down / Floored'},
 	[`weapon_mpx`]					 ={['name']  = 'weapon_mpx',					['label'] = 'MPX',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
 	[`weapon_pp19`]					 ={['name']  = 'weapon_pp19',					['label'] = 'PP19',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Riddled / Drilled / Finished / Submachine Gunned'},
-
+	[`weapon_huntingrifle`]			 ={['name']  = 'weapon_huntingrifle',			['label'] = 'Hunting Rifle',			['ammotype'] = 'AMMO_SNIPER',	['damagereason'] = 'Sniped'},
+	[`weapon_bow`]					 ={['name']  = 'weapon_bow',					['label'] = 'Bow',						['ammotype'] = 'AMMO_ARROW',	['damagereason'] = 'Speared'},
+	[`weapon_beretta93r`]			 ={['name'] = 'weapon_beretta93r',				['label'] = 'Beretta 93R',				['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},
+	[`weapon_deserteagle`]			 ={['name'] = 'weapon_deserteagle',				['label'] = 'Desert Eagle',				['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},		
+	[`weapon_engraved1911`]			 ={['name'] = 'weapon_engraved1911',			['label'] = 'Engraved 1911',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},		
+	[`weapon_fnx45`]				 ={['name'] = 'weapon_fnx45',					['label'] = 'FNX .45',					['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},	
+	[`weapon_g36c`]					 ={['name'] = 'weapon_g36c',					['label'] = 'G36C',						['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Gunned Down'},		
+	[`weapon_glockgen4`]			 ={['name'] = 'weapon_glockgen4',				['label'] = 'Glock Gen 4',				['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},		
+	[`weapon_hk416`]				 ={['name'] = 'weapon_hk416',					['label'] = 'HK 416',					['ammotype'] = 'AMMO_RIFLE',	['damagereason'] = 'Gunned Down'},		
+	[`weapon_p90`]					 ={['name'] = 'weapon_p90',						['label'] = 'P90',						['ammotype'] = 'AMMO_SMG',		['damagereason'] = 'Gunned Down'},	
+	[`weapon_scarh`]				 ={['name'] = 'weapon_scarh',					['label'] = 'Scar H',					['ammotype'] = 'AMMO_SNIPER',		['damagereason'] = 'Gunned Down'},	
+	[`weapon_ump45`]				 ={['name'] = 'weapon_ump45',					['label'] = 'UMP .45',					['ammotype'] = 'AMMO_SMG',	['damagereason'] = 'Gunned Down'},
+	
+	[`weapon_pt92`]					 ={['name'] = 'weapon_pt92',					['label'] = 'Compensated PT92',			['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},
+	[`weapon_pt92nocomp`]			 ={['name'] = 'weapon_pt92nocomp',				['label'] = ' PT92',					['ammotype'] = 'AMMO_PISTOL',	['damagereason'] = 'Gunned Down'},
+	[`weapon_dildo`]				 ={['name'] = 'weapon_dildo',					['label'] = 'Dildo',					['ammotype'] = nil,				['damagereason'] = 'Slapped'}
 	-- Melee
 }
