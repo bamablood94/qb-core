@@ -75,7 +75,8 @@ QBShared.StarterItems = {
     ['water_bottle'] = { amount = 5, item = 'water_bottle'},
     ['snikkel_candy'] = { amount = 5, item = 'snikkel_candy'},
     ['phone'] = {amount = 1, item = 'phone'},
-    ['help_tablet'] = {amount = 1, item = 'help_tablet'}
+    ['help_tablet'] = {amount = 1, item = 'help_tablet'},
+    ['lockpick'] = {amount = 3, item = 'lockpick'},
 }
 
 QBShared.MaleNoGloves = {

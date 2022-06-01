@@ -61,7 +61,8 @@ QBCore.Commands.Add('tp', 'TP To Player or Coords (Admin Only)', { { name = 'id/
             local coords = GetEntityCoords(target)
             TriggerClientEvent('QBCore:Command:TeleportToPlayer', source, coords)
         else
-            TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+            --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+            TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
         end
     else
         if args[1] and args[2] and args[3] then
@@ -71,10 +72,12 @@ QBCore.Commands.Add('tp', 'TP To Player or Coords (Admin Only)', { { name = 'id/
             if x ~= 0 and y ~= 0 and z ~= 0 then
                 TriggerClientEvent('QBCore:Command:TeleportToCoords', source, x, y, z)
             else
-                TriggerClientEvent('QBCore:Notify', source, Lang:t('error.wrong_format'), 'error')
+                --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.wrong_format'), 'error')
+                TriggerClientEvent('okokNotify:Alert', source, 'Wrong Format', Lang:t('error.wrong_format'), 3500, 'error')
             end
         else
-            TriggerClientEvent('QBCore:Notify', source, Lang:t('error.missing_args'), 'error')
+            --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.missing_args'), 'error')
+            TriggerClientEvent('okokNotify:Alert', source, "Missing Arguement", Lang:t('error.missing_args'), 3500, 'error')
         end
     end
 end, 'admin')
@@ -96,7 +99,8 @@ QBCore.Commands.Add('addpermission', 'Give Player Permissions (God Only)', { { n
     if Player then
         QBCore.Functions.AddPermission(Player.PlayerData.source, permission)
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'god')
 
@@ -106,7 +110,8 @@ QBCore.Commands.Add('removepermission', 'Remove Players Permissions (God Only)',
     if Player then
         QBCore.Functions.RemovePermission(Player.PlayerData.source, permission)
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'god')
 
@@ -114,7 +119,8 @@ end, 'god')
 
 QBCore.Commands.Add('openserver', 'Open the server for everyone (Admin Only)', {}, false, function(source)
     if not QBCore.Config.Server.Closed then
-        TriggerClientEvent('QBCore:Notify', source, 'The server is already open', 'error')
+        --TriggerClientEvent('QBCore:Notify', source, 'The server is already open', 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Server Open', 'The server is already open', 3500, 'error')
         return
     end
     if QBCore.Functions.HasPermission(source, 'admin') then
@@ -126,7 +132,8 @@ end, 'admin')
 
 QBCore.Commands.Add('closeserver', 'Close the server for people without permissions (Admin Only)', { { name = 'reason', help = 'Reason for closing it (optional)' } }, false, function(source, args)
     if QBCore.Config.Server.Closed then
-        TriggerClientEvent('QBCore:Notify', source, 'The server is already closed', 'error')
+        --TriggerClientEvent('QBCore:Notify', source, 'The server is already closed', 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Server Closed', 'The server is already closed', 3500, 'error')
         return
     end
     if QBCore.Functions.HasPermission(source, 'admin') then
@@ -160,7 +167,8 @@ QBCore.Commands.Add('givemoney', 'Give A Player Money (Admin Only)', { { name = 
     if Player then
         Player.Functions.AddMoney(tostring(args[2]), tonumber(args[3]))
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'admin')
 
@@ -169,7 +177,8 @@ QBCore.Commands.Add('setmoney', 'Set Players Money Amount (Admin Only)', { { nam
     if Player then
         Player.Functions.SetMoney(tostring(args[2]), tonumber(args[3]))
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'admin')
 
@@ -177,7 +186,8 @@ end, 'admin')
 
 QBCore.Commands.Add('job', 'Check Your Job', {}, false, function(source)
     local PlayerJob = QBCore.Functions.GetPlayer(source).PlayerData.job
-    TriggerClientEvent('QBCore:Notify', source, Lang:t('info.job_info', {value = PlayerJob.label, value2 = PlayerJob.grade.name, value3 = PlayerJob.onduty}))
+    --TriggerClientEvent('QBCore:Notify', source, Lang:t('info.job_info', {value = PlayerJob.label, value2 = PlayerJob.grade.name, value3 = PlayerJob.onduty}))
+    TriggerClientEvent('okokNotify:Alert', source, 'Job Info', Lang:t('info.job_info', {value = PlayerJob.label, value2 = PlayerJob.grade.name, value3 = PlayerJob.onduty}), 3500, 'info')
 end, 'user')
 
 QBCore.Commands.Add('setjob', 'Set A Players Job (Admin Only)', { { name = 'id', help = 'Player ID' }, { name = 'job', help = 'Job name' }, { name = 'grade', help = 'Grade' } }, true, function(source, args)
@@ -185,7 +195,8 @@ QBCore.Commands.Add('setjob', 'Set A Players Job (Admin Only)', { { name = 'id',
     if Player then
         Player.Functions.SetJob(tostring(args[2]), tonumber(args[3]))
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'admin')
 
@@ -193,7 +204,8 @@ end, 'admin')
 
 QBCore.Commands.Add('gang', 'Check Your Gang', {}, false, function(source)
     local PlayerGang = QBCore.Functions.GetPlayer(source).PlayerData.gang
-    TriggerClientEvent('QBCore:Notify', source, Lang:t('info.gang_info', {value = PlayerGang.label, value2 = PlayerGang.grade.name}))
+    --TriggerClientEvent('QBCore:Notify', source, Lang:t('info.gang_info', {value = PlayerGang.label, value2 = PlayerGang.grade.name}))
+    TriggerClientEvent('okokNotify:Alert', source, 'Gang Info', Lang:t('info.gang_info', {value = PlayerGang.label, value2 = PlayerGang.grade.name}), 3500, 'info')
 end, 'user')
 
 QBCore.Commands.Add('setgang', 'Set A Players Gang (Admin Only)', { { name = 'id', help = 'Player ID' }, { name = 'gang', help = 'Name of a gang' }, { name = 'grade', help = 'Grade' } }, true, function(source, args)
@@ -201,7 +213,8 @@ QBCore.Commands.Add('setgang', 'Set A Players Gang (Admin Only)', { { name = 'id
     if Player then
         Player.Functions.SetGang(tostring(args[2]), tonumber(args[3]))
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'admin')
 
@@ -213,7 +226,8 @@ QBCore.Commands.Add('clearinv', 'Clear Players Inventory (Admin Only)', { { name
     if Player then
         Player.Functions.ClearInventory()
     else
-        TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.not_online'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Not Online', Lang:t('error.not_online'), 3500, 'error')
     end
 end, 'admin')
 
@@ -257,7 +271,11 @@ QBCore.Commands.Add('me', 'Show local message', {{name = 'message', help = 'Mess
     local pCoords = GetEntityCoords(ped)
     local msg = table.concat(args, ' ')
     if msg == '' then return end
-    if string.match(msg, "<") then TriggerClientEvent('QBCore:Notify', source, Lang:t('error.wrong_format'), 'error') return end
+    if string.match(msg, "<") then
+        --TriggerClientEvent('QBCore:Notify', source, Lang:t('error.wrong_format'), 'error')
+        TriggerClientEvent('okokNotify:Alert', source, 'Wrong Format', Lang:t('error.wrong_format'), 3500, 'error') 
+        return 
+    end
     for k,v in pairs(QBCore.Functions.GetPlayers()) do
         local target = GetPlayerPed(v)
         local tCoords = GetEntityCoords(target)

@@ -930,32 +930,32 @@ QBShared.Jobs = {
             },
         },
 	},
-	['snowsmechanicshop'] = {
-		label = 'Mechanic',
+	['wolfyarmory'] = {
+		label = "Wolfy's Armory",
 		defaultDuty = false,
 		offDutyPay = false,
 		grades = {
 			['0'] = {
-				name = 'Associate',
-				payment = 100,
+				name = 'Intern',
+				payment = 150
 			},
 			['1'] = {
-				name = 'Mechanic',
-				payment = 125,
+				name = 'Clerk',
+				payment = 175
 			},
 			['2'] = {
-				name = 'Lead Mechanic',
-				payment = 150,
+				name = 'Range Supervisor',
+				payment = 200
 			},
 			['3'] = {
 				name = 'Manager',
-				payment = 175,
+				payment = 250,
 				isboss = true,
 			},
 			['4'] = {
 				name = 'Owner',
-				payment = 200,
-				isboss = true,
+				payment = 300,
+				isboss = true
 			}
 		}
 	},
@@ -1083,12 +1083,12 @@ QBShared.Jobs = {
 				payment = 120
 			},
 			['3'] = {
-				name = 'Manager',
+				name = 'Store Manager',
 				isboss = true,
 				payment = 180
 			},
 			['4'] = {
-				name = 'Owner',
+				name = 'Store Owner',
 				isboss = true,
 				payment = 210
 			},
@@ -1158,31 +1158,6 @@ QBShared.Jobs = {
 		defaultDuty = false,
 		offDutyPay = false,
 	},
-	['snowsgunshow'] = {
-		label = 'Snows Gun Show',
-		grades = {
-			['0'] = {
-				name = 'Associate',
-				payment = 100,
-			},
-			['1'] = {
-				name = 'Senior Associate',
-				payment = 125
-			},
-			['2'] = {
-				name = 'Manager',
-				payment = 140,
-				isboss = true,
-			},
-			['3'] = {
-				name = 'Owner',
-				payment = 200,
-				isboss = true,
-			},
-		},
-		defaultDuty = false,
-		offDutyPay = false,
-	},
 	["uwu"] = { 
 		label = "UwU Cafe",
 		grades = {
@@ -1207,4 +1182,19 @@ QBShared.Jobs = {
 		defaultDuty = false,
 		offDutyPay = false
 	},
+	['builder'] = {
+		label = 'Builder',
+		grades = {
+			['0'] = {
+				name = 'Grade 0',
+				payment = 0
+			},
+			['1'] = {
+				name = 'Grade 1',
+				payment = 0
+			},
+		},
+		defaultDuty = false,
+		offDutyPay = false,
+	}
 }

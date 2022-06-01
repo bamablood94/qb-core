@@ -175,19 +175,23 @@ function PaycheckInterval()
                         local account = exports['qb-management']:GetAccount(Player.PlayerData.job.name)
                         if account ~= 0 then -- Checks if player is employed by a society
                             if account < payment then -- Checks if company has enough money to pay society
-                                TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('error.company_too_poor'), 'error')
+                                --TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('error.company_too_poor'), 'error')
+                                TriggerClientEvent('okokNotify:Alert', Player.PlayerData.source, 'Not Enough Money', Lang:t('error.company_too_poor'), 3500, 'error')
                             else
                                 Player.Functions.AddMoney('bank', payment, 'Paycheck')
                                 exports['qb-management']:RemoveMoney(Player.PlayerData.job.name, payment)
-                                TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', {value = payment}))
+                                --TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', {value = payment}))
+                                TriggerClientEvent('okokNotify:Alert', Player.PlayerData.source, 'Paycheck', Lang:t('info.received_paycheck', {value = payment}), 3500, 'info')
                             end
                         else
                             Player.Functions.AddMoney('bank', payment, 'Paycheck')
-                            TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', {value = payment}))
+                            --TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', {value = payment}))
+                            TriggerClientEvent('okokNotify:Alert', Player.PlayerData.source, 'Paycheck', Lang:t('info.received_paycheck', {value = payment}), 3500, 'info')
                         end
                     else
                         Player.Functions.AddMoney('bank', payment, 'Paycheck')
-                        TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', {value = payment}))
+                        --TriggerClientEvent('QBCore:Notify', Player.PlayerData.source, Lang:t('info.received_paycheck', {value = payment}))
+                        TriggerClientEvent('okokNotify:Alert', Player.PlayerData.source, 'Paycheck', Lang:t('info.received_paycheck', {value = payment}), 3500, 'info')
                     end
                 end
             end

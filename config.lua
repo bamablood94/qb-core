@@ -20,6 +20,17 @@ QBConfig.Player.Bloodtypes = {
     "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-",
 }
 
+QBConfig.Player.WhitelistItems = {
+    ['phone'] = true,
+    ['kurkakola'] = true,
+    ['coffee'] = true,
+    ['water_bottle'] = true,
+    ['sandwich'] = true,
+    ['snikkel_candy'] = true,
+    ['twerks_candy'] = true,
+    ['tosti'] = true,
+}
+
 QBConfig.Server = {} -- General server config
 QBConfig.Server.UseConnectQueue = true -- Use connectqueue as a queue for your server
 QBConfig.Server.Closed = false -- Set server closed (no one can join except people with ace permission 'qbadmin.join')

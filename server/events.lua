@@ -4,7 +4,8 @@ AddEventHandler('playerDropped', function()
     local src = source
     if not QBCore.Players[src] then return end
     local Player = QBCore.Players[src]
-    TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Dropped', 'red', '**' .. GetPlayerName(src) .. '** (' .. Player.PlayerData.license .. ') left..')
+    --TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Flew Out', 'red', '**'..GetPlayerName(src)..'** (Character: '..Player.PlayerData.charinfo.firstname.. ' '..Player.PlayerData.charinfo.lastname..')')
+    TriggerEvent('qb-log:server:CreateLog', 'leave', GetPlayerName(src), 'red', '(Character: '..Player.PlayerData.charinfo.firstname..' '..Player.PlayerData.charinfo.lastname..')')
     Player.Functions.Save()
     QBCore.Player_Buckets[Player.PlayerData.license] = nil
     QBCore.Players[src] = nil
@@ -145,10 +146,12 @@ RegisterNetEvent('QBCore:ToggleDuty', function()
     if not Player then return end
     if Player.PlayerData.job.onduty then
         Player.Functions.SetJobDuty(false)
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('info.off_duty'))
+        --TriggerClientEvent('QBCore:Notify', src, Lang:t('info.off_duty'))
+        TriggerClientEvent('okokNotify:Alert', src, "Duty", Lang:t('info.off_duty'), 3500, 'info')
     else
         Player.Functions.SetJobDuty(true)
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('info.on_duty'))
+        --TriggerClientEvent('QBCore:Notify', src, Lang:t('info.on_duty'))
+        TriggerClientEvent('okokNotify:Alert', src, "Duty", Lang:t('info.on_duty'), 3500, 'info')
     end
     TriggerClientEvent('QBCore:Client:SetDuty', src, Player.PlayerData.job.onduty)
 end)
@@ -185,12 +188,14 @@ RegisterNetEvent('QBCore:CallCommand', function(command, args)
     local hasPerm = QBCore.Functions.HasPermission(src, QBCore.Commands.List[command].permission)
     if hasPerm then
         if QBCore.Commands.List[command].argsrequired and #QBCore.Commands.List[command].arguments ~= 0 and not args[#QBCore.Commands.List[command].arguments] then
-            TriggerClientEvent('QBCore:Notify', src, Lang:t('error.missing_args2'), 'error')
+            --TriggerClientEvent('QBCore:Notify', src, Lang:t('error.missing_args2'), 'error')
+            TriggerClientEvent('okokNotify:Alert', src, "Missing Arguement", Lang:t('error.missing_args2'), 3500, 'error')
         else
             QBCore.Commands.List[command].callback(src, args)
         end
     else
-        TriggerClientEvent('QBCore:Notify', src, Lang:t('error.no_access'), 'error')
+        --TriggerClientEvent('QBCore:Notify', src, Lang:t('error.no_access'), 'error')
+        TriggerClientEvent('okokNotify:Alert', src, 'No Access', Lang:t('error.no_access'), 3500, 'error')
     end
 end)
 

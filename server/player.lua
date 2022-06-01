@@ -25,6 +25,7 @@ function QBCore.Player.Login(source, citizenid, newData)
             else
                 DropPlayer(source, 'You Have Been Kicked For Exploitation')
                 TriggerEvent('qb-log:server:CreateLog', 'anticheat', 'Anti-Cheat', 'white', GetPlayerName(source) .. ' Has Been Dropped For Character Joining Exploit', false)
+                
             end
         else
             QBCore.Player.CheckPlayerData(source, newData)
@@ -92,9 +93,12 @@ function QBCore.Player.CheckPlayerData(source, PlayerData)
         ['date'] = nil
     }
     PlayerData.metadata['licences'] = PlayerData.metadata['licences'] or {
-        ['driver'] = true,
+        ['permit'] = false,
+        ['driver'] = false,
         ['business'] = false,
-        ['weapon'] = false
+        ['weapon1'] = false,
+        ['weapon2'] = false,
+        ['weapon3'] = false
     }
     PlayerData.metadata['inside'] = PlayerData.metadata['inside'] or {
         house = nil,
@@ -346,7 +350,8 @@ function QBCore.Player.CreatePlayer(PlayerData)
         local totalWeight = QBCore.Player.GetTotalWeight(self.PlayerData.items)
         local itemInfo = QBCore.Shared.Items[item:lower()]
         if not itemInfo then
-            TriggerClientEvent('QBCore:Notify', self.PlayerData.source, Lang:t('error.item_not_exist'), 'error')
+            --TriggerClientEvent('QBCore:Notify', self.PlayerData.source, Lang:t('error.item_not_exist'), 'error')
+            TriggerClientEvent('okokNotify:Alert', self.PlayerData.source, 'Does Not Exist', Lang:t('error.item_not_exist'), 3500, 'error')
             return
         end
         amount = tonumber(amount)
@@ -378,7 +383,8 @@ function QBCore.Player.CreatePlayer(PlayerData)
                 end
             end
         else
-            TriggerClientEvent('QBCore:Notify', self.PlayerData.source, Lang:t('error.too_heavy'), 'error')
+            --TriggerClientEvent('QBCore:Notify', self.PlayerData.source, Lang:t('error.too_heavy'), 'error')
+            TriggerClientEvent('okokNotify:Alert', self.PlayerData.source, 'Too Heavy', Lang:t('error.too_heavy'), 3500, 'warning')
         end
         return false
     end
@@ -427,10 +433,19 @@ function QBCore.Player.CreatePlayer(PlayerData)
     end
 
     function self.Functions.ClearInventory()
+        for k, v in pairs(self.PlayerData.items) do
+            if v and not QBCore.Config.Player.WhitelistItems[v.name] then
+                self.PlayerData.items[k] = nil
+            end
+        end
+            self.Functions.UpdatePlayerData()
+            TriggerEvent('qb-log:server:CreateLog', 'playerinventory', 'ClearInventory', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** inventory cleared')
+    end
+    --[[function self.Functions.ClearInventory()
         self.PlayerData.items = {}
         self.Functions.UpdatePlayerData()
         TriggerEvent('qb-log:server:CreateLog', 'playerinventory', 'ClearInventory', 'red', '**' .. GetPlayerName(self.PlayerData.source) .. ' (citizenid: ' .. self.PlayerData.citizenid .. ' | id: ' .. self.PlayerData.source .. ')** inventory cleared')
-    end
+    end]]
 
     function self.Functions.GetItemByName(item)
         item = tostring(item):lower()
@@ -546,11 +561,11 @@ function QBCore.Player.DeleteCharacter(source, citizenid)
 			queries[i] = {query = query:format(v.table), values = { citizenid }}
 		end
 
-        MySQL.Async.transaction(queries, function(result)
+        --[[MySQL.Async.transaction(queries, function(result)
 			if result then
 				TriggerEvent('qb-log:server:CreateLog', 'joinleave', 'Character Deleted', 'red', '**' .. GetPlayerName(source) .. '** ' .. license .. ' deleted **' .. citizenid .. '**..')
             end
-		end)
+		end)]]
     else
         DropPlayer(source, 'You Have Been Kicked For Exploitation')
         TriggerEvent('qb-log:server:CreateLog', 'anticheat', 'Anti-Cheat', 'white', GetPlayerName(source) .. ' Has Been Dropped For Character Deletion Exploit', true)
